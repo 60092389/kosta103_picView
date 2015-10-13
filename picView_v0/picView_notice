@@ -33,3 +33,13 @@ images 폴더 안에 메인 및 카테고리 사진 추가
 
 2015/10/13 19:11 박준병
 jsp폴더 -> layout폴더 -> css폴더 -> footer.css 수정
+
+2015/10/13 19:23 황재준
+images -> logo.jpg 추가
+
+* 로고 이미지, 업로드 아이콘 -> 상단바 수정
+layout -> css -> header.css 수정
+layout -> header.jsp 수정
+
+css -> min 파일 빼고 삭제
+js -> min 파일 빼고 삭제
