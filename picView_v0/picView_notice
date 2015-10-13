@@ -43,3 +43,9 @@ layout -> header.jsp 수정
 
 css -> min 파일 빼고 삭제
 js -> min 파일 빼고 삭제
+
+2015/10/13 19:47 최영혜
+index ->index.jsp 추가
+layout-> css->footer.css 수정
+css->bootstrap.min.css 수정
+              
