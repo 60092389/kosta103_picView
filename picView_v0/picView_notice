@@ -30,3 +30,6 @@ js폴더에 jquery.min.js 추가, css-bootstrap.min.css파일 수정
 
 2015/10/13 17:29 황재준
 images 폴더 안에 메인 및 카테고리 사진 추가
+
+2015/10/13 19:11 박준병
+jsp폴더 -> layout폴더 -> css폴더 -> footer.css 수정

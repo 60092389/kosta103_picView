@@ -2,6 +2,7 @@
 
 p{
 	color: white;
+	margin : 2px;
 }
 
 .foot {
@@ -12,7 +13,7 @@ p{
   position : absolute;
   text-align: center;
   width : 100%;
-  height: 75px;
+  height: 10%;
 }
 
 .foot .foot-container{
@@ -23,11 +24,11 @@ p{
 
 
 .foot .foot-container .foot-container-top{
-	height: 25px;
+	height: 35%;
 }
 .foot .foot-container .foot-container-center{
-	height : 25px;
+	height : 40%;
 }
 .foot .foot-container .foot-container-bottom{
-	height : 25px;
+	height : 35%;
 }
