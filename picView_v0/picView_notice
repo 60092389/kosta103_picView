@@ -27,3 +27,6 @@ footer.css에만 내용 추가하고, footer.jsp 작성함.
 2015/10/13/ 17:07분 최영혜
 layout폴더 안에 header.jsp파일 추가
 js폴더에 jquery.min.js 추가, css-bootstrap.min.css파일 수정
+
+2015/10/13 17:29 황재준
+images 폴더 안에 메인 및 카테고리 사진 추가
