@@ -19,7 +19,7 @@ p{
 .foot .foot-container{
 	margin : 0 auto;
 	position: relative;
-	width : 1060px;
+	width : 1060px auto;
 }
 
 
