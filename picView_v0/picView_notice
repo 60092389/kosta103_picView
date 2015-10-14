@@ -94,3 +94,7 @@ images -> main myPage_background.jpg 이미지 추가
 
 2015/10/14 18:29 박준병
 footer.css 수정
+
+2015/10/14 18:55 황재준
+jsp -> login -> css -> loginForm.css 로그인폼 css 수정
+jsp -> login -> loginForm.jsp 로그인폼 jsp 수정

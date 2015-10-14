@@ -16,43 +16,37 @@
 
 </head>
 <body>
-	<div class="container">
-		<div class="header">
-			<jsp:include page="../layout/header.jsp"></jsp:include>
-		</div>
+	<div class="header">
+		<jsp:include page="../layout/header.jsp"></jsp:include>
+	</div>
 
+	<div class="center">
+		<div class="login">
+			<form action="" role="form">
+				<div id="id" class="input-group col-xs-3 col-md-3 col-lg-3">
+					<span class="input-group-addon"> <span
+						class="glyphicon glyphicon-user"> </span>
+					</span> <input class="form-control" type="text" placeholder="아이디">
 
-		<div class="center">
-			<div class="login">
-				<form action="" role="form">
-					<div id="id" class="input-group col-xs-3 col-md-3 col-lg-3">
-						<span class="input-group-addon"> <span
-							class="glyphicon glyphicon-user"> </span>
-						</span> <input class="form-control" type="text" placeholder="아이디">
+				</div>
+				<br> <br>
+				<div id="pass" class="input-group col-xs-3 col-md-3 col-lg-3">
+					<span class="input-group-addon"> <span
+						class="glyphicon glyphicon-lock"></span>
+					</span> <input class="form-control" type="text" placeholder="비밀번호">
 
-					</div>
-					<br> <br>
-					<div id="pass" class="input-group col-xs-3 col-md-3 col-lg-3">
-						<span class="input-group-addon"> <span
-							class="glyphicon glyphicon-lock"></span>
-						</span> <input class="form-control" type="text" placeholder="비밀번호">
-
-					</div>
-					<br> <br>
-					<div class="button">
-						<input id="login" class="btn btn-primary" type="button"
-							value="로그인">&nbsp;&nbsp;&nbsp;&nbsp; <input id="join"
-							class="btn btn-primary" type="button" value="회원가입">
-					</div>
-				</form>
-			</div>
-		</div>
-
-
-		<div class="footer">
-			<jsp:include page="../layout/footer.jsp"></jsp:include>
+				</div>
+				<br> <br>
+				<div class="button">
+					<input id="login" class="btn btn-primary" type="button" value="로그인">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input id="join" class="btn btn-primary" type="button" value="회원가입">
+				</div>
+			</form>
 		</div>
 	</div>
 
+	<div class="footer">
+		<jsp:include page="../layout/footer.jsp"></jsp:include>
+	</div>
 </body>
 </html>
