@@ -171,6 +171,7 @@
     right: 0;
     top: 0;
     background-image: url("../../../images/main/background_08.jpg");
+    background-color: #212124;
 }
 .bottom-bucket .not-quite-centered {
     padding-top: 190px;
