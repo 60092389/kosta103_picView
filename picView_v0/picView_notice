@@ -82,3 +82,7 @@ jsp -> login -> loginForm.jsp 로그인폼 jsp 추가
 
 2015/10/14 16:02 최연식
 myroom -> follow.jsp 팔로워 친구목록 폼 추가
+
+2015/10/14 16:49 최연식
+jsp -> account -> message.jsp, sendmessage.jsp, detailmessage.jsp 추가
+메세지함, 보내기, 메세지내용보기 폼 추가

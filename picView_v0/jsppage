@@ -73,6 +73,7 @@
   accountSet.jsp	계정설정
   detailHelp.jsp	자세한 도움말
   message.jsp		메시지함
+  messagesend.jsp   메세지보내기
 
 
 
