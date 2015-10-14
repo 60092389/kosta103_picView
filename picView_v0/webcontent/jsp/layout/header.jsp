@@ -12,7 +12,9 @@
 <script src="../../js/bootstrap.min.js"></script>
 <!-- Bootstrap -->
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/kfonts2.css" rel="stylesheet">
 <link href="css/header.css" rel="stylesheet">
+
 </head>
 <body>
 	<div class="container">
@@ -30,7 +32,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<div class="test">
+				<div id="logo">
 					<a href="#"><img id="logo" src="../../images/logo.jpg"></a>
 				</div>
 			</div>
@@ -41,7 +43,7 @@
 
 					<li><a href="#">모아보기</a></li>
 					<li><a href="#">도움말</a></li>
-					<li style="width: 400px">&nbsp;</li>
+					<li style="width: 360px">&nbsp;</li>
 
 					<li>
 						<form class="navbar-form navbar-right" role="search">

@@ -66,4 +66,9 @@ jsp -> layout -> css -> footer.css 수정
 
 2015/10/14 11:34 최연식
 myroom -> mypage.jsp 나페이지 기본레이아웃 잡아놓음
+
+2015/10/14 11:37 최영혜
+jsp->index->index.jsp 수정/ index.css추가
+images->main->이미지 추가
+jsp->layout->header.jsp 수정            
               
