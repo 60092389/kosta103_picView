@@ -58,4 +58,9 @@ jsp -> login -> login.jsp 로그인 폼 추가 // bootstrap.min.css, custom2.css
 2015/10/14 10:54 황재준
 오류나서 jsp -> layout -> header.css의 kfonts2.css 링크 삭제
 
+
+2015/10/14 11:21 박준병
+jsp -> main -> loginMain.jsp에 로그인메이지 기본레이아웃 잡아놓음
+jsp -> main -> css폴더 안에 loginMain.css 생성
+jsp -> layout -> css -> footer.css 수정
               
