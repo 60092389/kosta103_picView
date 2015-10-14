@@ -91,3 +91,6 @@ jsp -> account -> message.jsp, sendmessage.jsp, detailmessage.jsp 추가
 jsp -> myRoom -> my_Menu.jsp랑 css폴더 추가
 my_Menu는 아직 네비메뉴바 없는 상태(미완성)
 images -> main myPage_background.jpg 이미지 추가
+
+2015/10/14 18:29 박준병
+footer.css 수정
