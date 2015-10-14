@@ -1,0 +1,31 @@
+@CHARSET "EUC-KR";
+
+.center {
+	margin-top: -15px;
+	margin-left: -120px;
+	margin-right: -113px;
+	height: 555px;
+	background-image: url(../../../images/main/main_4.jpg);
+}
+
+.login form {
+	padding-top: 180px;
+	padding-bottom: 200px;
+}
+
+#id {
+	margin-left: 520px;
+}
+
+#pass {
+	margin-left: 520px;
+}
+
+.button {
+	padding-left: 615px;
+}
+
+.footer {
+	width: 1366px;
+	margin-left: -113px;
+}
