@@ -63,4 +63,7 @@ jsp -> login -> login.jsp 로그인 폼 추가 // bootstrap.min.css, custom2.css
 jsp -> main -> loginMain.jsp에 로그인메이지 기본레이아웃 잡아놓음
 jsp -> main -> css폴더 안에 loginMain.css 생성
 jsp -> layout -> css -> footer.css 수정
+
+2015/10/14 11:34 최연식
+myroom -> mypage.jsp 나페이지 기본레이아웃 잡아놓음
               
