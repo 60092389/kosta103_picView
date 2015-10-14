@@ -48,4 +48,7 @@ js -> min 파일 빼고 삭제
 index ->index.jsp 추가
 layout-> css->footer.css 수정
 css->bootstrap.min.css 수정
+
+2015/10/14 09:07 최영혜
+메인이미지 추가
               
