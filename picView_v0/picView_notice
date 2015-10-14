@@ -80,5 +80,5 @@ jsp->index->css->index.css update
 jsp -> login -> css -> loginForm.css 로그인폼 css 추가
 jsp -> login -> loginForm.jsp 로그인폼 jsp 추가
 
-2015/10/14 15:14 황재준
-images -> animal_plant 동/식물 이미지 수정
+2015/10/14 16:02 최연식
+myroom -> follow.jsp 팔로워 친구목록 폼 추가
