@@ -13,112 +13,20 @@
 <script src="jquery.validate.js"></script>
 
 <script type="text/javascript">
+
 	$(function(){
-		$('.img1').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/1art.jpg')
-			? '../../images/category/1art_ck.jpg'
-			: '../../images/category/1art.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	$(function(){
-		$('.img2').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/2trip.jpg')
-			? '../../images/category/2trip_ck.jpg'
-			: '../../images/category/2trip.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	$(function(){
-		$('.img3').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/3fashion.jpg')
-			? '../../images/category/3fachion_ck.jpg'
-			: '../../images/category/3fachion.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-   //2번째 줄
-	$(function(){
-		$('.img4').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/4music.jpg')
-			? '../../images/category/4music_ck.jpg'
-			: '../../images/category/4music.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	$(function(){
-		$('.img5').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/5book.png')
-			? '../../images/category/5book_ck.jpg'
-			: '../../images/category/5book.png';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	$(function(){
-		$('.img6').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/6animal.jpg')
-			? '../../images/category/6animal_ck.jpg'
-			: '../../images/category/6animal.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	 //3번째 줄
-	$(function(){
-		$('.img7').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/7human.jpg')
-			? '../../images/category/7human_ck.jpg'
-			: '../../images/category/7human.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	$(function(){
-		$('.img8').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/8design_ck.jpg')
-			? '../../images/category/8design_ck.jpg'
-			: '../../images/category/8design_ck.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	$(function(){
-		$('.img9').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/9issue.jpg')
-			? '../../images/category/9issue_ck.jpg'
-			: '../../images/category/9issue.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	
-	 //3번째 줄
-	$(function(){
-		$('.img10').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/10food_ck.jpg')
-			? '../../images/category/10food_ck.jpg'
-			: '../../images/category/10food.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	$(function(){
-		$('.img11').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/3fashion.jpg')
-			? '../../images/category/3fachion_ck.jpg'
-			: '../../images/category/3fashion.jpg';
-			$(this).attr('src',src);
-		})	
-	});
-	$(function(){
-		$('.img12').on('click', function(){
-			var src = ($(this).attr('src') === '../../images/category/3fashion.jpg')
-			? '../../images/category/3fachion_ck.jpg'
-			: '../../images/category/3fashion.jpg';
-			$(this).attr('src',src);
-		})	
+		
+		$('.FollowButton').on('click',function(){
+			var index2 = $('.FollowButton').index(this);
+			if($('.wholeInterestMask').eq(index2).attr('class') == 'wholeInterestMask hidden'){	
+				$('.wholeInterestMask').eq(index2).attr('class','wholeInterestMask');
+				$('.wholeInterestMask').eq(index2).css('display','block');
+			}else{
+				$('.wholeInterestMask').eq(index2).attr('class','wholeInterestMask hidden');
+				$('.wholeInterestMask').eq(index2).css('display','none');
+			}
+			
+		});
 	});
 	
 	
@@ -142,12 +50,11 @@
 	</div>
 	<div class="contents">
 	
-	   
 		<div class="center_left col-xs-7 col-lg-7">
 			<form class="form-horizontal" role="form">  
         
 			<div class="form-group">
-			 <label for="Name" class="col-xs-2 col-lg-2 control-label">이름수정</label>
+			 <label for="Name" class="col-xs-2 col-lg-2 control-label">이름변경</label>
 				<div class="col-xs-3 col-lg-3 col-sm-3" >
 				 <input type="text"  name="lastName" class="form-control"  placeholder="성" name="name">
 				 </div>
@@ -156,8 +63,9 @@
 				 </div>
 		   </div>
 
+
         <div class="form-group">   
-            <label for="password" class="col-xs-2 col-lg-2 control-label">비밀번호 변경</label>
+            <label for="password" class="col-xs-2 col-lg-2 control-label">비밀번호 수정</label>
             <div class="col-xs-5 col-lg-5 col-sm-5">
                 <input type="password" class="form-control" placeholder="비밀번호"> 
             </div>
@@ -195,7 +103,7 @@
 		  </div>
         	<br>
                <div class="form-group"> 
-                 <label for="gender" class="col-xs-2 col-lg-2 control-label">성별변경</label>
+                 <label for="gender" class="col-xs-2 col-lg-2 control-label">성별 </label>
         			<div class="form-group col-sm-7 col-lg-7">	
         			&nbsp;&nbsp;
 				 <input type="radio" name="gender" value="남자">남자&nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,127 +116,199 @@
 		
 		<!-- 카테고리 -->
 	   <div class="row center_right col-xs-4 col-lg-4">
-		   <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			    <div class="category">
-			        <img src="../../images/category/1art.jpg" alt="아트" class="img1">
-			          <span class="title">예술</span>
-			          </div>
-			      </a>
-			    </div>
-		 
-			     <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			    <div class="caterogy">
-			        <img src="../../images/category/2trip.jpg" alt="여행" class="img2">
-			          <span class="title">여행</span>
-			          </div>
-			      </a>
-			    </div>
-		 
-			    
-			     <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			    <div class="caterogy">
-			        <img src="../../images/category/3fashion.jpg" alt="패션" class="img3">
-			          <span class="title">패션</span>
-			          </div>
-			      </a>
-			    </div>
-		 
-			    <!-- 2번째줄 -->
-		
-			 <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			    <div class="caterogy">
-			        <img src="../../images/category/4music.jpg" alt="음악" class="img4">
-			          <span class="title">음악</span>
-			          </div>
-			      </a>
-			    </div>
-			    
-			    
-			   <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			    <div class="category">
-			        <img src="../../images/category/5book.png" alt="도서" class="img5">
-			          <span class="title">도서</span>
-			          </div>
-			      </a>
-			    </div>
-			 
-			   <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			       <div class="category">
-			       <img src="../../images/category/6animal.jpg" alt="동식물" class="img6">
-			          <span class="title">동식물</span>
-			          </div>
-			      </a>
-			    </div>
-			 
+	     <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/1art.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>예술</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+	      <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/2trip.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>여행</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+	      <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/3fashion.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>패션</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+			<!-- 2번째줄 -->
+		  <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/4music.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>음악</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+	      <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/5book.png)"></div>
+			       		<div class="interestLabel">
+						<h4>도서</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+	      <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/6animal.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>동식물</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+
+
 			    <!-- 3번째줄 -->
-			    			    
-			   <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			       <div class="category">
-			       <img src="../../images/category/7human.jpg" alt="인물" class="img7">
-			          <span class="title">인물</span>
-			          </div>
-			      </a>
-			    </div>
-			    
-			    <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			       <div class="category">
-			       <img src="../../images/category/8design.jpg" alt="디자인" class="img8">
-			          <span class="title">디자인</span>
-			          </div>
-			      </a>
-			    </div>
-			 
-			    <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			       <div class="category">
-			       <img src="../../images/category/9issue.jpg" alt="이슈" class="img9">
-			          <span class="title">이슈</span>
-			          </div>
-			      </a>
-			    </div>
+		  <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/7human.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>인물</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+	      <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/8design.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>디자인</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+		  <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/9issue.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>이슈</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>	
+
 			 
 			    <!-- 4번째 줄 -->
-			   
-			   <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			       <div class="category">
-			       <img src="../../images/category/10food.jpg" alt="음식" class="img10">
-			          <span class="title">음식</span>
-			          </div>
-			      </a>
-			    </div>
-			    
-			    
-			   <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			       <div class="category">
-			       <img src="../../images/category/11sports.jpg" alt="스포츠" class="img11">
-			          <span class="title">스포츠</span>
-			          </div>
-			      </a>
-			    </div>
-			 
-			   <div class="col-sm-4 col-md-4">
-			      <a href="#" class="thumbnail">
-			       <div class="category">
-			       <img src="../../images/category/12etc.jpg" alt="기타" class="img12">
-			          <span class="title">기타</span>
-			          </div>
-			      </a>
-			    </div>
-			 
-			</div>
+		  <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/10food.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>음식</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>	
+		  <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/11sports.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>스포츠</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>	   
+		  <div class="col-sm-4 col-md-4">
+	       <div class="Interest Module FollowButton">
+		       <div class="wholeInterestMask hidden">
+					<div class="check"> </div>
+					<div class="mask"> </div>
+			   </div>
+		       <div class="interestWrapper" style="background-color: #403F14">
+		       		<div class="interestImage" style="background-image: url(../../images/category/12etc.jpg)"></div>
+			       		<div class="interestLabel">
+						<h4>기타</h4>
+					</div>
+		       </div>
+	       
+	       </div>
+	      </div>
+
+
+	 </div>
          
          
-    
+        <!-- 로그인 버튼 -->
          <div class="login">
           		<label class="col-sm-12 col-sm-12">
        				<input type="submit"  id="loginbutton" value="수정하기" class="btn btn-primary btn-lg">
