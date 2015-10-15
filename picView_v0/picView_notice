@@ -164,3 +164,8 @@ src-> log4j.properties, mybatis-config.xml 추가
 2015/10/15 16:09 황재준
 jsp -> myRoom -> my_Menu.jsp, jsp -> myRoom -> css -> my_Menu.css 메뉴바 삭제
 jsp -> myRoom -> my_Show.jsp, jsp -> myRoom -> css -> my_Show1.css 메뉴바 추가
+
+2015/10/15 16:52 박준병
+jsp -> admin -> css폴더랑 member_Admin.jsp 추가
+bootstrap.min.css의 container width값 수정했음
+jsp -> layout -> adminHeader.jsp 추가
