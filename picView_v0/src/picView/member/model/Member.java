@@ -1,6 +1,8 @@
 package picView.member.model;
 
-public class Member {
+import java.io.Serializable;
+
+public class Member implements Serializable{
 	private int mem_no;
 	private String mem_name;
 	private String mem_id;

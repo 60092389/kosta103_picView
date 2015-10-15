@@ -174,3 +174,8 @@ jsp -> layout -> adminHeader.jsp 추가
 jsp -> myRoom -> css -> my_Show1.css을 my_Show.css로 이름 변경
 jsp -> myRoom -> css -> my_Tag.css 그 외(태그별) 추가
 jsp -> myRoom -> my_Tag.jsp 추가
+
+
+2015/10/15 18:48 최연식
+
+src -> picview.member 클래스 model2 로 구조 생성 ( 꼭 확인요망)

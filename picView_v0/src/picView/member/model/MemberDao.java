@@ -7,6 +7,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+import picView.member.mapper.MemberMapper;
+
 public class MemberDao {
 	
 	private static MemberDao dao = new MemberDao();
@@ -26,5 +28,25 @@ public class MemberDao {
 		}
 		return new SqlSessionFactoryBuilder().build(input);
 	}
+	
+	public int insertMember(Member member){
+		SqlSession sqlSession = getseSessionFactory().openSession();
+		int re = -1;
+		try {
+			re = sqlSession.getMapper(MemberMapper.class).insertMember(member);
+			if(re > 0){
+				sqlSession.commit();
+			}else{
+				sqlSession.rollback();
+			}		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			sqlSession.close();
+		}
+		return re;
+	}
+	
+	
 
 }
