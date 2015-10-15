@@ -169,3 +169,8 @@ jsp -> myRoom -> my_Show.jsp, jsp -> myRoom -> css -> my_Show1.css 메뉴바 추
 jsp -> admin -> css폴더랑 member_Admin.jsp 추가
 bootstrap.min.css의 container width값 수정했음
 jsp -> layout -> adminHeader.jsp 추가
+
+2015/10/15 18:10 황재준
+jsp -> myRoom -> css -> my_Show1.css을 my_Show.css로 이름 변경
+jsp -> myRoom -> css -> my_Tag.css 그 외(태그별) 추가
+jsp -> myRoom -> my_Tag.jsp 추가
