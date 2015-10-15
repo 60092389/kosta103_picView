@@ -13,7 +13,7 @@
 <script src="../../js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div id="myMenu" style="border: 1px solid">
+	<div id="myMenu">
 		<div id="profileBack" style="border: 2px solid blue">
 			<div class="coverPhoto">
 				<div class="coverPhoto-content fluid-centered">
@@ -43,23 +43,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="myMenu_navi" style="border: 2px solid red">
-			<ul class="nav nav-pills">
-				<li class="menu active"><a href="#">사진 관리</a></li>
-				<li class="menu"><a href="#">보여 주기</a></li>
-				<li class="menu"><a href="#">사진첩</a></li>
-				<li class="menu"><a href="#">관심 사진</a></li>
-				<li class="menu"><a href="follow.jsp">친구 목록</a></li>
-				<li id="other" class="dropdown open"><a href="#"
-					data-toggle="dropdown"> 그 외 <span class="caret"></span>
-				</a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">태그별</a>
-						<li><a href="#">인기별</a>
-						<li><a href="#">다운로드 기록</a>
-						<li><a href="#">프로필</a>
-					</ul></li>
 		</div>
 	</div>
 </body>

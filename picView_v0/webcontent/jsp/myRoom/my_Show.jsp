@@ -24,6 +24,26 @@
 		<jsp:include page="../myRoom/my_Menu.jsp"></jsp:include>
 	</div>
 
+
+	<div id="myMenu_navi">
+		<ul class="nav nav-pills">
+			<li class="menu"><a href="#">사진 관리</a></li>
+			<li class="menu active"><a href="#">보여 주기</a></li>
+			<li class="menu"><a href="#">사진첩</a></li>
+			<li class="menu"><a href="#">관심 사진</a></li>
+			<li class="menu"><a href="follow.jsp">친구 목록</a></li>
+			<li id="other" class="dropdown"><a href=""
+				data-toggle="dropdown"> 그 외 <span class="caret"></span>
+			</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">태그별</a>
+					<li><a href="#">인기별</a>
+					<li><a href="#">다운로드 기록</a>
+					<li><a href="#">프로필</a>
+				</ul></li>
+	</div>
+
+
 	<div class="contents">
 		<div class="btn-group">
 			<button type="button" class="btn btn-default dropdown-toggle"
@@ -35,22 +55,16 @@
 				<li><a href="#">친구 보기</a></li>
 			</ul>
 		</div>
-		
+
 		<!-- 공개 보기 -->
-		<div class="open_pic">
-		
-		</div>
-		
+		<div class="open_pic"></div>
+
 		<!-- 비공개 보기 -->
-		<div class="close_pic">
-		
-		</div>
-		
+		<div class="close_pic"></div>
+
 		<!-- 친구 보기 -->
-		<div class="friend_pic">
-		
-		</div>
-		
+		<div class="friend_pic"></div>
+
 		<!-- 공개 사진이 없을때 -->
 		<div class="no_picture">
 

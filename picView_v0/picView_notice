@@ -160,3 +160,7 @@ jsp->account -> accountSet.jsp 계정관리 폼 수정
 src-> picVeiw.memver.model -> Member.java, MemberDao.java
 src-> log4j.properties, mybatis-config.xml 추가
 ** model, mapper, controller, service  모델2방식으로 이해좀시켜주세요..ㅠㅠ
+
+2015/10/15 16:09 황재준
+jsp -> myRoom -> my_Menu.jsp, jsp -> myRoom -> css -> my_Menu.css 메뉴바 삭제
+jsp -> myRoom -> my_Show.jsp, jsp -> myRoom -> css -> my_Show1.css 메뉴바 추가

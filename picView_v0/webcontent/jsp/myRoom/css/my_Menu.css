@@ -9,10 +9,6 @@
 	height : 250px;
 }
 
-#myMenu_navi{
-	height : 50px;
-}
-
 .view{
 	opacity: 1 !important;
   transition: opacity 0.25s ease 0s;
@@ -190,14 +186,6 @@ em{
  bottom: 0;
  position: absolute;
  right: 130px;
-}
-
-#myMenu_navi{
-	margin-left: 150px;
-}
-
-#other {
-	margin-left: 530px;
 }
 
 
