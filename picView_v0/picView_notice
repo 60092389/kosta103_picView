@@ -144,3 +144,8 @@ jsp->category-> js, css, imgs 카테고리관련
 2015/10/15 15:03 황재준
 jsp->myRoom->my_Show.jsp 보여주기 틀
 jsp->myRoom->my_Show1.css 보여주기 css 추가
+
+2015/10/15 15:11 최영혜
+jsp->login->css->register.css 수정
+jsp->login->register.jsp 수정
+images->main->checkbox.png 추가
