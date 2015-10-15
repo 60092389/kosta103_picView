@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link href="./bootstrap.min.css" rel="stylesheet">
     <link href="./custom2.css" rel="stylesheet">
+    <link href="../../css/picView_custom.css" rel="stylesheet">
     <style type="text/css">
     	
     

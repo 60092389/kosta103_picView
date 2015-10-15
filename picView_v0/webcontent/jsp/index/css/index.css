@@ -23,7 +23,7 @@
     background-image: url("../../../images/main/background_05.jpg");
    
 }
-.bucket01_stack{
+.footer .bucket01 .bucket01_stack{
 	background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -216,3 +216,4 @@
     background-color: #128fdc;
     color: #fff;
 }
+

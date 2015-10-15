@@ -113,3 +113,11 @@ jsp->collection->css / recent_Pic.jsp 추가 =>모아보기 페이지
 
 2015/10/15 10:21 박준병
 jsp->layout->css  footer.css 수정
+
+2015/10/15 10:42 박준병
+css폴더에 picView_custom.css 생성하고 거기에 header.css랑 footer.css내용들 넣어놓음
+모든 jsp파일에 
+<link href="../../css/picView_custom.css" rel="stylesheet">
+추가하고 
+footer.css랑 header.css link로 받아오던거 다삭제함
+앞으로 전체 jsp페이지에 적용할 css있으면 picView_custom.css에 작성하면됨(주석달아서)

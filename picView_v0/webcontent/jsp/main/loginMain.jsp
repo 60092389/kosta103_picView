@@ -8,8 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>로그인 메인</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
-<link href="../../jsp/layout/css/footer.css" rel="stylesheet">
-<link href="../../jsp/layout/css/header.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
 <link href="css/loginMain.css" rel="stylesheet">
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>

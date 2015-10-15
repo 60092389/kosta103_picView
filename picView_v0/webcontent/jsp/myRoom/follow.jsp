@@ -9,8 +9,7 @@
 
 
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
-<link href="../../jsp/layout/css/footer.css" rel="stylesheet">
-<link href="../../jsp/layout/css/header.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
 <title>내친구 목록</title>
 <style type="text/css">
 	.center_head div{

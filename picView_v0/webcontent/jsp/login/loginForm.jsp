@@ -10,8 +10,7 @@
 <script src="../../js/bootstrap.min.js"></script>
 
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
-<link href="../../jsp/layout/css/footer.css" rel="stylesheet">
-<link href="../../jsp/layout/css/header.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
 <link href="../../jsp/login/css/loginForm.css" rel="stylesheet">
 
 </head>

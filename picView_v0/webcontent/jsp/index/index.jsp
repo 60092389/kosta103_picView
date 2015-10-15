@@ -13,8 +13,7 @@
 <link href="css/index.css" rel="stylesheet">
 <!-- Bootstrap -->
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
-<link href="../../jsp/layout/css/footer.css" rel="stylesheet">
-<link href="../../jsp/layout/css/header.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
 
 </head>
 <body>
@@ -147,10 +146,9 @@
 			<center><a class="medium-ass butt" data-track="signup-bottom" href="/signup" data-rapid_p="42">야후 계정 만들기</a></center>
 		</div>
      </div>
-     <div id="yui_3_16_0_1_1444789083815_155" class="view footer-full-view requiredToShowOnServer">
-     	<jsp:include page="../layout/footer.jsp"></jsp:include>
-     	
-     </div>
+    <div id="foot" class="footer-full-view">
+     	<jsp:include page="../layout/footer.jsp"></jsp:include>     	
+    </div>
     
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

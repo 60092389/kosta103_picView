@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/recent_Pic.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
 <title>Insert title here</title>
 <script src="../../js/jquery.min.js"></script>
 <script type="text/javascript">
