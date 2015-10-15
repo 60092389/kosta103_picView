@@ -19,7 +19,7 @@
 <body>
 	<div class="container">
 
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top navnav" role="navigation">
 
 		<div class="container">
 			<%

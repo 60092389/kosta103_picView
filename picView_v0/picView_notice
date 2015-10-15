@@ -102,3 +102,9 @@ jsp -> login -> loginForm.jsp 로그인폼 jsp 수정
 2015/10/14 19:40 황재준
 jsp -> myRoom -> myMenu.jsp 수정
 jsp -> myRoom -> css -> myMenu.css 수정
+
+
+2015/10/15 10:11 최연식
+myroom my_Menu.jsp 를 mypage.jsp 에 집어넣음
+(헤더 css 수정)
+

@@ -35,16 +35,7 @@
 	</div>
 	<div class="content">
 		<div class="content_head">
-			<h2>배경이미지</h2>
-			
-		</div>
-		<div class="contetnt_head_menu">
-			<div class= "col-md-2">menu1</div>
-			<div class= "col-md-2">menu2</div>
-			<div class= "col-md-2">menu3</div>
-			<div class= "col-md-2">menu4</div>
-			<div class= "col-md-2">menu5</div>
-			<div class= "col-md-2">menu6</div>
+			<jsp:include page="./my_Menu.jsp"></jsp:include>
 		</div>
 		<div class="contetnt_center">
 		<h2>뉴스피드</h2>
