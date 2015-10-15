@@ -134,3 +134,9 @@ jsp->login->register.jsp
 jsp->login->css->register.css 랑 cutstom2.css 추가
 회원가입 폼이랑 카테고리 선택 register.jsp 만듦
 images->category에 사진 추가
+
+
+2015/10/15 16:23 최연식
+jsp->category-> category.jsp
+jsp->category-> js, css, imgs 카테고리관련 
+카테고리 폼 만들었슴돠
