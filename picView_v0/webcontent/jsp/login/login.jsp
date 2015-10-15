@@ -15,7 +15,7 @@
 </head>
 <body>
 	<h1>회원가입</h1><br><br>
-	<div class=center>
+	<div class="center contents">
 	<form class="form-horizontal" role="form">  
         <fieldset>
           <legend>기본정보 </legend>

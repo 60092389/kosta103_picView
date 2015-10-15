@@ -14,7 +14,7 @@
 	<div class="header">
 		<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
-	<div class="center">
+	<div class="center contents">
 		<table class="message table">
 			<tr>
 				<th>ÀÛ¼ºÀÚ</th>

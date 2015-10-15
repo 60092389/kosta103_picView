@@ -19,7 +19,7 @@
 		<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
 
-	<div class="center">
+	<div class="center contents">
 		<div class="login">
 			<form action="" role="form">
 				<div id="id" class="input-group col-xs-3 col-md-3 col-lg-3">

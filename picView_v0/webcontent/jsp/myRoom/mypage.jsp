@@ -32,7 +32,7 @@
 	<div class="header">
 	<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
-	<div class="content">
+	<div class="contents">
 		<div class="content_head">
 			<jsp:include page="./my_Menu.jsp"></jsp:include>
 		</div>

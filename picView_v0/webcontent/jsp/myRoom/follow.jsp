@@ -29,7 +29,7 @@
 			<jsp:include page="../layout/header.jsp"></jsp:include>
 		</div> 
 		
-		<div class="center">
+		<div class="center contents">
 			<div class="image"><img src="..." alt="..." class="img-rounded">회원이미지</div>
 			<h2>회원님이 팔로우하는 사람들</h2>
 			<div class="center_head">

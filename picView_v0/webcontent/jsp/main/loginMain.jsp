@@ -17,7 +17,7 @@
 	<div class="header">
 		<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
-	<div id="main" class="clearfix" role="main" style="border: 1px solid red; ">
+	<div id="main" class="clearfix contents" role="main" style="border: 1px solid red; ">
 		<div id="sidebar" style="border : 1px solid blue; position:relative; top: 0px; bottom: auto; left: auto;">
 			<div id="friendList">
 				<h2>친구목록</h2>

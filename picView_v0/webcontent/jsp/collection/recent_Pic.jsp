@@ -113,13 +113,13 @@
 				
 		      </div><!--사진보기 끝  -->
 		     </div>
+		    <div class="footer" style="position: relative;">
+					<jsp:include page="../layout/footer.jsp"></jsp:include>
+				</div>
 			</div>
-		
-		      <div class="footer">
-		         <jsp:include page="../layout/footer.jsp"></jsp:include>
-		      </div>
-		 </div>
-	 </div> 
+
+		</div>
+
 
 </body>
 </html>

@@ -24,7 +24,7 @@
 	<div class="header">
 		<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
-	<div class="center">
+	<div class="center contents">
 		<form class="">
 			<div class="form-group">
 				<label>보낼사람</label>

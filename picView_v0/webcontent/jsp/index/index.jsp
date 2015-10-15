@@ -21,8 +21,8 @@
 	<div class="header">
 	<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div> 
-	 
 	<div class="contents">
+	<div class="content">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
 		
 			<!--페이지-->
@@ -145,7 +145,8 @@
 			<br><br>
 			<center><a class="medium-ass butt" data-track="signup-bottom" href="/signup" data-rapid_p="42">야후 계정 만들기</a></center>
 		</div>
-     </div>
+    </div>
+    </div>
     <div id="foot" class="footer-full-view">
      	<jsp:include page="../layout/footer.jsp"></jsp:include>     	
     </div>

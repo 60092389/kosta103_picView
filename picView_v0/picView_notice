@@ -121,3 +121,10 @@ css폴더에 picView_custom.css 생성하고 거기에 header.css랑 footer.css�
 추가하고 
 footer.css랑 header.css link로 받아오던거 다삭제함
 앞으로 전체 jsp페이지에 적용할 css있으면 picView_custom.css에 작성하면됨(주석달아서)
+
+
+2015/10/15 11:39 박준병
+앞으로 jsp파일 작성할때 body는 header/contents/footer로 나누어서 작성
+contents부분은 무조건 class="contents"로 묶고 시작!
+모든 jps파일 contents 부분들 contents class없던거 추가해주었고
+picView_custom.css에 .contents 추가했음

@@ -8,13 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../../js/bootstrap.min.js"></script>
 <link href="../../css/picView_custom.css" rel="stylesheet">
+<link href="test.css" rel="stylesheet">
 <title>메세지함</title>
 </head>
 <body>
 	<div class="header">
 		<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
-	<div class="center">
+	<div class="center contents">
 		<table class="message table">
 			<tr>
 				<th>작성자</th>
@@ -35,7 +36,7 @@
 	<br><br>
 	 <div id="yui_3_16_0_1_1444789083815_155" class="view footer-full-view requiredToShowOnServer">
      	<jsp:include page="../layout/footer.jsp"></jsp:include>	
-     </div>
+   </div>
 
 
 </body>
