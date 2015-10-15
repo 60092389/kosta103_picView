@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>보여주기</title>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
+<link href="../../jsp/myRoom/css/my_Menu.css" rel="stylesheet">
+<link href="../../jsp/myRoom/css/my_Show1.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="header">
+		<jsp:include page="../layout/header.jsp"></jsp:include>
+	</div>
+
+	<div class="my_Menu">
+		<jsp:include page="../myRoom/my_Menu.jsp"></jsp:include>
+	</div>
+
+	<div class="contents">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle"
+				data-toggle="dropdown">
+				공개보기 <span class="caret"> </span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">비공개 보기</a></li>
+				<li><a href="#">친구 보기</a></li>
+			</ul>
+		</div>
+		
+		<!-- 공개 보기 -->
+		<div class="open_pic">
+		
+		</div>
+		
+		<!-- 비공개 보기 -->
+		<div class="close_pic">
+		
+		</div>
+		
+		<!-- 친구 보기 -->
+		<div class="friend_pic">
+		
+		</div>
+		
+		<!-- 공개 사진이 없을때 -->
+		<div class="no_picture">
+
+			<h3>공개 사진이 없습니다.</h3>
+			<p>
+				여러분의 포토스트림은 공개 포트폴리오입니다.<br>포토스트림을 채우려면 카메라 롤을 사용하여 사진을 공개로
+				설정하세요.
+			</p>
+		</div>
+
+		<div class="button">
+			<input id="login" class="btn btn-primary" type="button"
+				value="사진 관리로 이동">
+		</div>
+	</div>
+
+	<div class="footer">
+		<jsp:include page="../layout/footer.jsp"></jsp:include>
+	</div>
+</body>
+</html>
