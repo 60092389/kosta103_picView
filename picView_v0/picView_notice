@@ -128,3 +128,9 @@ footer.css랑 header.css link로 받아오던거 다삭제함
 contents부분은 무조건 class="contents"로 묶고 시작!
 모든 jps파일 contents 부분들 contents class없던거 추가해주었고
 picView_custom.css에 .contents 추가했음
+
+2015/10/15 14:00 홍채영
+jsp->login->register.jsp
+jsp->login->css->register.css 랑 cutstom2.css 추가
+회원가입 폼이랑 카테고리 선택 register.jsp 만듦
+images->category에 사진 추가
