@@ -203,3 +203,9 @@ drogdrop 사용시  사용할부분에  id="items" 사용하면 됩니다
 2) server.xml 에 
 <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/oracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="kosta103"/>
 추가해주세요
+
+2015/10/16 10:51 박준병
+jsp -> admin -> member_Admin.jsp 수정
+jsp -> admin -> report_Admin.jsp 추가
+jsp -> admin -> css -> admin.css 수정
+jsp -> layout -> adminHeader.jsp 수정

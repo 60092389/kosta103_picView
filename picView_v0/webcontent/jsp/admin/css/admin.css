@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+
+thead th{
+	text-align: center;
+}
+
+table a{
+	color: black !important;
+}
+table a:HOVER, a:FOCUS{
+	color: #0553a9 !important;
+}
+
+
+/**************************************************************/
+											/* member_Admin css */
+/**************************************************************/
+
+.member-admin-center td{
+	font-size: 12px;
+}
+
+#member-admin-center{
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#member-admin-center .member_table{
+	width: 49%;
+	float: left;
+	text-align: center;
+}
+
+#member-admin-center .black_table{
+	width: 49%;
+	float: right;
+	text-align: center;
+}
+
+.memberlist thead th{
+	font-size: 12px;
+}
+.blacklist thead th{
+	font-size: 12px;
+}
+
+/**************************************************************/
+											/* report_Admin css */
+/**************************************************************/
+
+.reportlist-tbody p{
+	margin-top: 25px; 
+}
+
+.reportlist-tbody img{
+	width: 100px;
+	height: 70px;
+}
+
+#report-admin-center{
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#report-admin-center .report_table .reportlist{
+	text-align: center;
+}
+
+.btn-css{
+	margin-top: 15px !important;
+}
