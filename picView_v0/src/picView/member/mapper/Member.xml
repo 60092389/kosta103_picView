@@ -15,7 +15,9 @@
 			mem_seq.nextval, #{mem_name}, #{mem_id}, #{mem_pwd}, #{mem_birth}, #{mem_sex} , 1, 'N', 10
 		)
 	</insert>
-
+	<select id="loginMember" parameterType="Member" resultType="int">
+		select count(*) from member where mem_id = #{mem_id} and mem_pwd = #{mem_pwd}
+	</select>
 </mapper>
 
 

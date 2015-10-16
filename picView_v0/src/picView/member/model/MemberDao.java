@@ -47,5 +47,22 @@ public class MemberDao {
 		}
 		return re;
 	}
+	public int loginMember(Member member){
+		SqlSession sqlSession = getSessionFactory().openSession();
+		int re = -1;
+		try {
+			re = sqlSession.getMapper(MemberMapper.class).loginMember(member);
+			if(re==1){
+				sqlSession.commit();
+			}else{
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			sqlSession.close();
+		}
+		return re;
+	}
 
 }

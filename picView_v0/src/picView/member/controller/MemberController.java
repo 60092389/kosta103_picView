@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import picView.member.action.ActionForward;
 import picView.member.action.Action;
 import picView.member.action.InsertAction;
+import picView.member.action.loginAction;
 
 @WebServlet("*.do")
 public class MemberController extends HttpServlet {
@@ -52,6 +53,13 @@ public class MemberController extends HttpServlet {
     		try {
    				forward = action.execute(request, response);
 				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("jsp/login/loginForm.do")){
+    		action = new loginAction();
+    		try {
+				forward = action.execute(request, response);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

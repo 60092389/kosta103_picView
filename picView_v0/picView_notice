@@ -243,3 +243,11 @@ jsp->admin->category_Admin.jsp 추가
 jsp->admin->tag_Admin.jsp 추가
 jsp->css->admin.css 수정
 퀀텀디비에 insert into category values(1,SYSDATE,'.','okok'); 넣고 회원가입할것
+
+
+2015/10/16 16:25 최영혜
+picView.member.controller->MemberController.java 수정
+picView.member.mapper->두개 자바파일 수정
+picView.member.model->MemberDao.java수정
+picView.member.action->loginAction.java추가
+jsp->login->loginForm.jsp->수정
