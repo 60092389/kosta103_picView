@@ -222,5 +222,12 @@ jsp->basic->css,img,js, picDetail.jsp 추가
 ****basic은 다 추가하세요*****
 images->main->icons-collection2.png
 		      scrappy-collection.png
-3개 이미지 추가		      
+3개 이미지 추가
+
+
+2015/10/16 14:26 최연식
+src-> picView.album.action, picView.album.controller, picView.album.mapper, picView.album.model
+구조 정의 했어요유우우우
+
+		      
               
