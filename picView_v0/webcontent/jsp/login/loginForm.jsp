@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Insert title here</title>
+<title>로그인</title>
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 
@@ -19,7 +19,7 @@
 		<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
 
-	<div class="center contents">
+	<div class="center">
 		<div class="login">
 			<form action="" role="form">
 				<div id="id" class="input-group col-xs-3 col-md-3 col-lg-3">
@@ -32,7 +32,7 @@
 				<div id="pass" class="input-group col-xs-3 col-md-3 col-lg-3">
 					<span class="input-group-addon"> <span
 						class="glyphicon glyphicon-lock"></span>
-					</span> <input class="form-control" type="text" placeholder="비밀번호">
+					</span> <input class="form-control" type="password" placeholder="비밀번호">
 
 				</div>
 				<br> <br>

@@ -232,4 +232,8 @@ src-> picView.album.action, picView.album.controller, picView.album.mapper, picV
 2015/10/16 15:07 최연식
 jsp->login-> register.jsp  가입버튼 2개 있는거 하나로 수정
 		      
-              
+2015/10/16 15:26 황재준
+css->picView_custom.css 빨간줄 수정
+jsp->login->login.jsp 비밀번호 타입 패스워드로 수정
+jsp->login->register.jsp 
+jsp->login->css->register.css register jsp, css 수정
