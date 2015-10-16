@@ -1,19 +1,16 @@
 package picView.member.model;
 
-import java.io.Serializable;
-
-public class Member implements Serializable{
+public class Member {
 	private int mem_no;
 	private String mem_name;
 	private String mem_id;
 	private String mem_pwd;
-	private String birth;
+	private String mem_birth;
 	private String mem_sex;
 	private int category_no;
-	private String blac_check;
-	private int pic_count;
-	
-	
+	private String black_check;
+	private String pic_count;
+
 	public int getMem_no() {
 		return mem_no;
 	}
@@ -38,11 +35,11 @@ public class Member implements Serializable{
 	public void setMem_pwd(String mem_pwd) {
 		this.mem_pwd = mem_pwd;
 	}
-	public String getBirth() {
-		return birth;
+	public String getMem_birth() {
+		return mem_birth;
 	}
-	public void setBirth(String birth) {
-		this.birth = birth;
+	public void setMem_birth(String mem_birth) {
+		this.mem_birth = mem_birth;
 	}
 	public String getMem_sex() {
 		return mem_sex;
@@ -56,20 +53,17 @@ public class Member implements Serializable{
 	public void setCategory_no(int category_no) {
 		this.category_no = category_no;
 	}
-	public String getBlac_check() {
-		return blac_check;
+	public String getBlack_check() {
+		return black_check;
 	}
-	public void setBlac_check(String blac_check) {
-		this.blac_check = blac_check;
+	public void setBlack_check(String black_check) {
+		this.black_check = black_check;
 	}
-	public int getPic_count() {
+	
+	public String getPic_count() {
 		return pic_count;
 	}
-	public void setPic_count(int pic_count) {
+	public void setPic_count(String pic_count) {
 		this.pic_count = pic_count;
 	}
-	
-	
-	
-
 }

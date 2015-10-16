@@ -5,9 +5,7 @@
 
 <configuration>
 	<typeAliases>
-		<typeAlias type="test.model.Board" alias="Board"/>
-		<typeAlias type="test.model.Search" alias="Search"/>
-		<typeAlias type="test.model.Reply" alias="Reply"/>
+		<typeAlias type="picView.member.model.Member" alias="Member"/>
 	</typeAliases>
 	
 	<environments default="development">
@@ -20,7 +18,7 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="test/mapper/Board.xml"/>
+		<mapper resource="picView/member/mapper/Member.xml"/>
 	</mappers>
 	
 </configuration>

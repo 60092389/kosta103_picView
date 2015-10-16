@@ -2,6 +2,7 @@ package picView.member.model;
 
 import java.io.InputStream;
 
+import picView.member.mapper.MemberMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -17,7 +18,7 @@ public class MemberDao {
 		return dao;
 	}
 	
-	public SqlSessionFactory getseSessionFactory(){
+	public SqlSessionFactory getSessionFactory(){
 		String resource = "mybatis-config.xml";
 		InputStream input = null;
 		try {
@@ -30,7 +31,7 @@ public class MemberDao {
 	}
 	
 	public int insertMember(Member member){
-		SqlSession sqlSession = getseSessionFactory().openSession();
+		SqlSession sqlSession = getSessionFactory().openSession();
 		int re = -1;
 		try {
 			re = sqlSession.getMapper(MemberMapper.class).insertMember(member);
@@ -38,7 +39,7 @@ public class MemberDao {
 				sqlSession.commit();
 			}else{
 				sqlSession.rollback();
-			}		
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -46,7 +47,5 @@ public class MemberDao {
 		}
 		return re;
 	}
-	
-	
 
 }

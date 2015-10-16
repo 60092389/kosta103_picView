@@ -9,61 +9,73 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import picView.member.action.ActionForward;
 import picView.member.action.Action;
-import picView.member.action.Actionfoward;
 import picView.member.action.InsertAction;
-
 
 @WebServlet("*.do")
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-   
+
     public MemberController() {
         super();
-      
     }
     
-    protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-    	request.setCharacterEncoding("utf-8");
-		String requestURI = request.getRequestURI();
-    	String cont = request.getContextPath();
-    	String common = requestURI.substring(cont.length() + 1);
+    protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	
+    	String requestURI = request.getRequestURI();
+    	System.out.println(requestURI);
+    	
+    	if(request.getCharacterEncoding() == null){
+    		request.setCharacterEncoding("utf-8");
+    	}
+    	String contextPath = request.getContextPath();
+    	String command = requestURI.substring(contextPath.length()+1);
+    	System.out.println(command);
+    	
+    	ActionForward forward = null;
     	Action action = null;
-    	Actionfoward foward = null;
     	
-    	if(common.equals("insertBoard.do")){
-    		action = new InsertAction();
+    	
+    	if(command.equals("jsp/login/form.do")){
     		try {
-				foward = action.execute(request, response);
+    			forward = new ActionForward();
+    			forward.setReDirect(false);
+    			forward.setPath("register.jsp");
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    		
+    	}else if(command.equals("jsp/login/insertAction.do")){
+    	  	action = new InsertAction();
+    		try {
+   				forward = action.execute(request, response);
+				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
     	}
-    	
-    	
-    	
-    	if(foward != null){
-    		if(foward.isReDirect()){
-    			response.sendRedirect(foward.getPath());
+     
+    	if(forward != null){
+    		if(forward.isReDirect()){
+    			response.sendRedirect(forward.getPath());
+
     		}else{
-    			RequestDispatcher rd = request.getRequestDispatcher(foward.getPath());
-    			rd.forward(request, response);
+    			RequestDispatcher dispacher = 
+    					request.getRequestDispatcher(forward.getPath());
+    			dispacher.forward(request, response);
     		}
     	}
     }
-
-
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doProcess(request, response);
-    	
 	}
-	
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doProcess(request, response);
 	}
-
 
 }

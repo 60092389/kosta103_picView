@@ -52,15 +52,12 @@
 	
 	   <!-- 가입폼 -->
 		<div class="center_left col-xs-7 col-lg-7">
-			<form class="form-horizontal" role="form">  
+			<form class="form-horizontal" role="form" action="insertAction.do" method="post">  
         
 			<div class="form-group">
 			 <label for="Name" class="col-xs-2 col-lg-2 control-label"></label>
-				<div class="col-xs-3 col-lg-3 col-sm-3" >
-				 <input type="text"  name="lastName" class="form-control"  placeholder="성" name="name">
-				 </div>
-				 <div class="col-xs-4 col-lg-4 col-sm-4">
-				 <input type="text"  name="firstName"  class="form-control" placeholder="이름" name="name'">
+				<div class="col-xs-3 col-lg-5 col-sm-5" >
+				 <input type="text" class="form-control"  placeholder="이름"  name="name">
 				 </div>
 		   </div>
 
@@ -76,7 +73,7 @@
         <div class="form-group">   
             <label for="password" class="col-xs-2 col-lg-2 control-label"></label>
             <div class="col-xs-5 col-lg-5 col-sm-5">
-                <input type="password" class="form-control" placeholder="비밀번호"> 
+                <input type="password" class="form-control" placeholder="비밀번호" name="pass"> 
             </div>
         </div>
 
@@ -102,7 +99,7 @@
 				</div>  	
 				  	
 				<div class="birth">  	
-				   <select id="day" name="birth" class="form-control col-sm-2 col-lg-2">
+				   <select id="day" name="day" class="form-control col-sm-2 col-lg-2">
 					  	<option value="">일
 					  	<%for(int i=1; i<32 ;i++){ %>
 					  	<option value="<%=i%>"><%=i+"일" %></option>
@@ -119,6 +116,7 @@
 				 <input type="radio" name="gender" value="여자">여자
 				 </div>
 				 </div>
+				 <input type="submit"  id="loginbutton" value="가입하기" class="btn btn-primary btn-lg">
 			</form>
 		</div>
 

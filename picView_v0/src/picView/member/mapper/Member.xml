@@ -2,10 +2,33 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="picView.member.mapper">
-<cache />
 
+<mapper namespace="picView.member.mapper.MemberMapper">
+	<cache />
+
+	<insert id="insertMember" parameterType="Member">
 	
-
+		insert into member(
+			 mem_no, mem_name, mem_id, mem_pwd, mem_birth, mem_sex, category_no, black_check, pic_count
+		)
+		values(
+			mem_seq.nextval, #{mem_name}, #{mem_id}, #{mem_pwd}, #{mem_birth}, #{mem_sex} , 1, 'N', 10
+		)
+	</insert>
 
 </mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
