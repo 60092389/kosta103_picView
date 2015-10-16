@@ -217,4 +217,10 @@ jsp->layout-> header.jsp  가입링크 달아놨어요
 DB에 insert into category values(1,SYSDATE,'.');
 넣으시고 확인하면 잘돌아갑니다아
 
-
+2015/10/16 10:56 최영혜
+jsp->basic->css,img,js, picDetail.jsp 추가
+****basic은 다 추가하세요*****
+images->main->icons-collection2.png
+		      scrappy-collection.png
+3개 이미지 추가		      
+              
