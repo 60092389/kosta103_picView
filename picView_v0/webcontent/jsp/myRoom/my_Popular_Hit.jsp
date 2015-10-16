@@ -47,7 +47,7 @@
 			<ul class="nav nav-tabs">
 				<li class="active"><a href="my_Popular_Hit.jsp">조회수</a></li>
 				<li><a href="my_Popular_Good.jsp">좋아하는 사진</a></li>
-				<li><a href="#">댓글수</a></li>
+				<li><a href="my_Popular_Reply.jsp">댓글수</a></li>
 			</ul>
 		</div>
 
