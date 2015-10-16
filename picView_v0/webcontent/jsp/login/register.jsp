@@ -51,9 +51,9 @@
 	<div class="contents">
 	
 	   <!-- 가입폼 -->
-		<div class="center_left col-xs-7 col-lg-7">
-			<form class="form-horizontal" role="form" action="insertAction.do" method="post">  
-        
+	   <form class="form-horizontal" role="form" action="insertAction.do" method="post">  
+		<div class="center_left col-xs-7 col-lg-7">	
+ 
 			<div class="form-group">
 			 <label for="Name" class="col-xs-2 col-lg-2 control-label"></label>
 				<div class="col-xs-3 col-lg-5 col-sm-5" >
@@ -116,8 +116,8 @@
 				 <input type="radio" name="gender" value="여자">여자
 				 </div>
 				 </div>
-				 <input type="submit"  id="loginbutton" value="가입하기" class="btn btn-primary btn-lg">
-			</form>
+				 
+			
 		</div>
 
 		
@@ -321,7 +321,7 @@
        				<input type="submit"  id="loginbutton" value="가입하기" class="btn btn-primary btn-lg">
        			</label>
        	  </div>
-       	  
+       	 </form> 
 	</div>
 </div>
 
