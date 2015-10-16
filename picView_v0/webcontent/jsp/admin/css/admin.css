@@ -11,6 +11,11 @@ table a:HOVER, a:FOCUS{
 	color: #0553a9 !important;
 }
 
+.admin-center{
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /**************************************************************/
 											/* member_Admin css */
@@ -21,9 +26,7 @@ table a:HOVER, a:FOCUS{
 }
 
 #member-admin-center{
-	width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
+
 }
 
 #member-admin-center .member_table{
@@ -59,9 +62,7 @@ table a:HOVER, a:FOCUS{
 }
 
 #report-admin-center{
-	width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
+
 }
 #report-admin-center .report_table .reportlist{
 	text-align: center;
@@ -69,4 +70,47 @@ table a:HOVER, a:FOCUS{
 
 .btn-css{
 	margin-top: 15px !important;
+}
+
+/**************************************************************/
+											/* tag_Admin css */
+/**************************************************************/
+
+#tag-admin-center{
+
+}
+
+.tag_table{
+	width: 400px;
+	float: left;
+}
+
+.tag_graph{
+	width: 800px;
+	float: right;
+	border: 1px solid red;
+}
+
+#tag-admin-center .tag_table .taglist{
+	text-align: center;
+}
+
+/**************************************************************/
+											/* category_Admin css */
+/**************************************************************/
+
+.category-add{
+	margin-top: 20px;
+	width: 500px;
+	float: left;
+}
+
+.category-manage{
+	margin-top: 20px;
+	width: 700px;
+	float: right;
+}
+
+.button-css{
+	text-align: center;
 }

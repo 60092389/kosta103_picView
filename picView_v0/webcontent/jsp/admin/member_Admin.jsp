@@ -12,7 +12,7 @@
 		<jsp:include page="../layout/adminHeader.jsp"></jsp:include>
 	</div>
 	
-	<div id="member-admin-center" class="contents">
+	<div id="member-admin-center" class="admin-center contents">
 			<br><br>
 			<div class="member_table" >
 			<h2>회원관리</h2>

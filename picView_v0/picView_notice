@@ -237,3 +237,9 @@ css->picView_custom.css 빨간줄 수정
 jsp->login->login.jsp 비밀번호 타입 패스워드로 수정
 jsp->login->register.jsp 
 jsp->login->css->register.css register jsp, css 수정
+
+2015/10/16 16:11 박준병
+jsp->admin->category_Admin.jsp 추가
+jsp->admin->tag_Admin.jsp 추가
+jsp->css->admin.css 수정
+퀀텀디비에 insert into category values(1,SYSDATE,'.','okok'); 넣고 회원가입할것

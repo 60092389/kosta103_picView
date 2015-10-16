@@ -13,7 +13,7 @@
 		<jsp:include page="../layout/adminHeader.jsp"></jsp:include>
 	</div>
 	
-	<div id="report-admin-center" class="contents">
+	<div id="report-admin-center" class="admin-center contents">
 		<div class="report_table" >
 			<h2>신고물관리</h2>
 				<table  class="reportlist table table-bordered table-hover">
