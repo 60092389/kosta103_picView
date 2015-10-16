@@ -191,3 +191,14 @@ jsp -> myRoom -> my_Popular_Good, Hit, Reply.jsp 수정
 2015/10/16 10:22 최연식
 js -> drogdrop -> drogdrop.js 사진 마우스로 끌어서 집어넣기 자바스크립 추가
  경로 설정시 : ../../js/drogdrop/drogdrop.js
+
+ 2015/10/16 10:37 홍채영
+ 1. jsp->login->index.html 추가
+2. jsp->login->register.jsp 폼 name값들 수정
+3. mybatis-config,xml 수정
+4. picView.member.action / picView.member.controller / picView.member.mapper / picView.member.model 패키지 수정(그냥 다 가져가세요)
+//개인적으로 추가할것들 
+1) 디비에 create sequence mem_seq 추가해주세요
+2) server.xml 에 
+<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/oracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="kosta103"/>
+추가해주세요
