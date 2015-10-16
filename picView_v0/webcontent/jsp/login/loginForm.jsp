@@ -48,7 +48,7 @@
 				<div id="pass" class="input-group col-xs-3 col-md-3 col-lg-3">
 					<span class="input-group-addon"> <span
 						class="glyphicon glyphicon-lock"></span>
-					</span> <input class="form-control" name="pass" type="text" placeholder="비밀번호">
+					</span> <input class="form-control" name="pass" type="password" placeholder="비밀번호">
 
 				</div>
 				<br> <br>

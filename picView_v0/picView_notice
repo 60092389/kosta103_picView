@@ -251,3 +251,7 @@ picView.member.mapper->두개 자바파일 수정
 picView.member.model->MemberDao.java수정
 picView.member.action->loginAction.java추가
 jsp->login->loginForm.jsp->수정
+
+2015/10/16 17:29 박준병
+jsp->login->loginForm.jsp 수정
+jsp->login->css->loginForm.css 수정
