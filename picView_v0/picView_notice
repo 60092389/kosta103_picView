@@ -186,3 +186,8 @@ jsp -> myRoom -> my_Popular_Good, Hit, Reply.jsp 3개 jsp 추가
 
 2015/10/16 09:44 황재준
 jsp -> myRoom -> my_Popular_Good, Hit, Reply.jsp 수정
+
+
+2015/10/16 10:22 최연식
+js -> drogdrop -> drogdrop.js 사진 마우스로 끌어서 집어넣기 자바스크립 추가
+ 경로 설정시 : ../../js/drogdrop/drogdrop.js
