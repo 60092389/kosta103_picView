@@ -191,6 +191,7 @@ jsp -> myRoom -> my_Popular_Good, Hit, Reply.jsp 수정
 2015/10/16 10:22 최연식
 js -> drogdrop -> drogdrop.js 사진 마우스로 끌어서 집어넣기 자바스크립 추가
  경로 설정시 : ../../js/drogdrop/drogdrop.js
+drogdrop 사용시  사용할부분에  id="items" 사용하면 됩니다
 
  2015/10/16 10:37 홍채영
  1. jsp->login->index.html 추가
