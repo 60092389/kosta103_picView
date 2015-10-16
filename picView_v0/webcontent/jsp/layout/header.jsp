@@ -57,7 +57,7 @@
 					<li><a href="#"><span id="upload"
 							class="glyphicon glyphicon-cloud-upload"></span></a></li>
 					<li><a href="#">로그인</a></li>
-					<li><a href="#">가입</a></li>
+					<li><a href="../login/index.html">가입</a></li>
 				</ul>
 
 			</div>
