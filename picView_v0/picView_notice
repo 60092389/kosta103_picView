@@ -260,3 +260,6 @@ jsp->login->css->loginForm.css 수정
 안녕하세요 활기찬 월요일입니다. 화이팅!
 jsp -> basic -> upload.jsp	// 업로드 기능 추가하였으나 이상
 jsp -> basic -> css -> upload.css	// 파일 올리면 아래에 공백이 생김
+
+2015/10/19 10:39 황재준
+jsp -> basic -> js -> dropzone.js 드랍존 스크립트 파일 추가
