@@ -255,3 +255,8 @@ jsp->login->loginForm.jsp->수정
 2015/10/16 17:29 박준병
 jsp->login->loginForm.jsp 수정
 jsp->login->css->loginForm.css 수정
+
+2015/10/19 10:29 황재준
+안녕하세요 활기찬 월요일입니다. 화이팅!
+jsp -> basic -> upload.jsp	// 업로드 기능 추가하였으나 이상
+jsp -> basic -> css -> upload.css	// 파일 올리면 아래에 공백이 생김
