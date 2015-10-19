@@ -20,6 +20,7 @@
 	
 	<mappers>
 		<mapper resource="picView/member/mapper/Member.xml"/>
+		<mapper resource="picView/cate/mapper/Category.xml"/>
 	</mappers>
 	
 </configuration>
