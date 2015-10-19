@@ -34,7 +34,7 @@
 						class="icon-bar"></span>
 				</button>
 				<div id="logo">
-					<a href="#"><img id="logo" src="../../images/logo.jpg"></a>
+					<a href="../index/index.jsp"><img id="logo" src="../../images/logo.jpg"></a>
 				</div>
 			</div>
 
@@ -56,7 +56,7 @@
 					</li>
 					<li><a href="#"><span id="upload"
 							class="glyphicon glyphicon-cloud-upload"></span></a></li>
-					<li><a href="#">로그인</a></li>
+					<li><a href="../login/loginForm.jsp">로그인</a></li>
 					<li><a href="../login/index.html">가입</a></li>
 				</ul>
 

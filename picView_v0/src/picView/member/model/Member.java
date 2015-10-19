@@ -1,5 +1,8 @@
 package picView.member.model;
 
+import java.sql.Date;
+import java.sql.Timestamp;
+
 public class Member {
 	private int mem_no;
 	private String mem_name;
@@ -7,6 +10,13 @@ public class Member {
 	private String mem_pwd;
 	private String mem_birth;
 	private String mem_sex;
+	private Timestamp mem_date;
+	public Timestamp getMem_date() {
+		return mem_date;
+	}
+	public void setMem_date(Timestamp mem_date) {
+		this.mem_date = mem_date;
+	}
 	private int category_no;
 	private String black_check;
 	private String pic_count;

@@ -47,7 +47,7 @@
 	          <li><a href="../admin/member_Admin.jsp">회원관리</a></li>
 	          <li><a href="#">메인페이지관리</a></li>
 	          <li><a href="#">카테고리관리</a></li>
-	          <li><a href="#">태그관리</a></li>
+	          <li><a href="../admin/tag_Admin.jsp">태그관리</a></li>
 	          <li><a href="../admin/report_Admin.jsp">신고물관리</a></li>
 	          <li style="width:150px">&nbsp;</li>
 	          

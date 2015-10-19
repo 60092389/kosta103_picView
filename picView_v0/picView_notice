@@ -263,3 +263,9 @@ jsp -> basic -> css -> upload.css	// 파일 올리면 아래에 공백이 생김
 
 2015/10/19 10:39 황재준
 jsp -> basic -> js -> dropzone.js 드랍존 스크립트 파일 추가
+
+2015/10/19 11:04 박준병
+quantum db에서 DELETE FROM member;실행후에
+ALTER table member add mem_date date not null; 실행하여 회워가입일 컬럼 추가
+member.xml이랑 member.java에도 추가된 컬럼에따라 수정함
+jsp->layout->header.jsp랑 adminHeader.jsp 지금까지한페이지 링크걸리게 수정
