@@ -283,3 +283,4 @@ images->category->ck를 제외한 이미지 추가
 jsp->login->register.jsp 수정
           ->css->register.css 수정
 mybatis-config.xml 수정
+picView.member.mode->Member클래스 수정
