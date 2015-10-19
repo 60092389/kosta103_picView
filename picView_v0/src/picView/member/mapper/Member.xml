@@ -9,10 +9,10 @@
 	<insert id="insertMember" parameterType="Member">
 	
 		insert into member(
-			 mem_no, mem_name, mem_id, mem_pwd, mem_birth, mem_sex, mem_date,category_no, black_check, pic_count
+			 mem_no, mem_name, mem_id, mem_pwd, mem_birth, mem_sex, category_no, black_check, pic_count,mem_date
 		)
 		values(
-			mem_seq.nextval, #{mem_name}, #{mem_id}, #{mem_pwd}, #{mem_birth}, #{mem_sex}, SYSDATE,1, 'N', 10
+			mem_seq.nextval, #{mem_name}, #{mem_id}, #{mem_pwd}, #{mem_birth}, #{mem_sex} , #{category_no}, 'N', 10,SYSDATE
 		)
 	</insert>
 	<select id="loginMember" parameterType="Member" resultType="int">

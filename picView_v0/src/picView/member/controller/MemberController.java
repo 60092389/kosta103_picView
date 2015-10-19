@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import picView.cate.Action.ListCategoryAction;
 import picView.member.action.ActionForward;
 import picView.member.action.Action;
 import picView.member.action.InsertAction;
@@ -39,10 +40,10 @@ public class MemberController extends HttpServlet {
     	
     	
     	if(command.equals("jsp/login/form.do")){
+    		
+    		action = new ListCategoryAction();
     		try {
-    			forward = new ActionForward();
-    			forward.setReDirect(false);
-    			forward.setPath("register.jsp");
+   				forward = action.execute(request, response);
 				
 			} catch (Exception e) {
 				e.printStackTrace();

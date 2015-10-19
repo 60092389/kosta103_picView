@@ -20,7 +20,9 @@ public class InsertAction implements Action{
 		String mem_month = request.getParameter("month");
 		String mem_day = request.getParameter("day");
 		String mem_sex = request.getParameter("gender");
+		String[] category_no = request.getParameterValues("category_no");
 		
+		String cate = "";
 		//생년월일(mem_birth)을 년(year)+월(month)+일(day)로 합쳐서 넣음
 		String mem_birth = mem_year+mem_month+mem_day;
 			    
@@ -31,6 +33,14 @@ public class InsertAction implements Action{
 	    member.setMem_name(mem_name);
 	    member.setMem_birth(mem_birth);
 	    member.setMem_sex(mem_sex);
+	    for(int i=0;i<category_no.length;i++){
+	    	cate = cate +category_no[i] + ",";
+	    	 
+	    }
+	    member.setCategory_no(cate);//카테고리 선택된것만 set해주기
+	   
+	    
+	    
 	    		
 		MemberDao dao = MemberDao.getInstance();
 		int re = dao.insertMember(member);

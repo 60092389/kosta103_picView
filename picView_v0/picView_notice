@@ -269,3 +269,16 @@ quantum db에서 DELETE FROM member;실행후에
 ALTER table member add mem_date date not null; 실행하여 회워가입일 컬럼 추가
 member.xml이랑 member.java에도 추가된 컬럼에따라 수정함
 jsp->layout->header.jsp랑 adminHeader.jsp 지금까지한페이지 링크걸리게 수정
+
+2015/10/19 11:29 최영혜
+회원가입시 카테고리도 들어가도록 수정
+picView.cate.Action / controller/ mapper/model 전체 소스 추가 
+picView.member.action->InsertAction.java 수정
+picView.member.controller->MemberController 수정
+picView.member.mapper->Member.xml 수정
+카테고리에 사진이 안보이는것은 
+I:\kosta103\work\프로젝트저장경로\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\프로젝트명\upload
+에 사진이 추가 되어있어야 사진이 저장됨
+images->category->ck를 제외한 이미지 추가
+jsp->login->register.jsp 수정
+          ->css->register.css 수정
