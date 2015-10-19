@@ -282,3 +282,4 @@ I:\kosta103\work\프로젝트저장경로\.metadata\.plugins\org.eclipse.wst.ser
 images->category->ck를 제외한 이미지 추가
 jsp->login->register.jsp 수정
           ->css->register.css 수정
+mybatis-config.xml 수정

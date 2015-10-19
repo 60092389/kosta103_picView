@@ -6,6 +6,7 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="picView.member.model.Member" alias="Member"/>
+		<typeAlias type="picView.cate.model.Category" alias="Category"/>
 	</typeAliases>
 	
 	<environments default="development">
