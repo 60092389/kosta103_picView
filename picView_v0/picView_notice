@@ -300,3 +300,11 @@ src->picView.cate.action, controller, mapper, model 다 다시받을것
 webcontent에 upload폴더 만들어놓을것!!필수필수우해해햏
 member.xml 수정
 jsp->picView.member.action, controller, mapper, model 다 다시받을것
+
+
+2015/10/20 20:28 최연식
+카테고리 폼 옆에 사이드바 생성 (미완)
+jsp->category 싹다받으세요
+src->picView.cate.action -> ListCaegoryAction3.java 추가
+src->picView.cate.controller -> CateController.java 수정
+

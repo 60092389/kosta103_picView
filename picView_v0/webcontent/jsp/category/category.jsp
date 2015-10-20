@@ -10,18 +10,73 @@
 <script src="./js/siteSecurity.js"></script>
 <script type="text/javascript" src="./js/jquery.scrollUp.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/main_menu.css" />
-
+<link href="./bootstrap.min.css" rel="stylesheet">
+<link href="./custom2.css" rel="stylesheet">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../jsp/login/css/register.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
 <title>Insert title here</title>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<script type="text/javascript">
+
+	$(function(){
+		var cnt = 0;
+		$('.FollowButton').on('click',function(){
+			var index2 = $('.FollowButton').index(this);
+			
+			if($('.wholeInterestMask').eq(index2).attr('class') == 'wholeInterestMask hidden'){	
+				$('.wholeInterestMask').eq(index2).attr('class','wholeInterestMask');
+				$('.wholeInterestMask').eq(index2).css('display','block');
+				$("input:checkbox[name='category_no']").eq(index2).prop('checked',"checked");
+				
+				cnt++;
+					if(cnt>3){
+						alert('카테고리는 3개까지 선택가능합니다.');
+						$('.wholeInterestMask').eq(index2).attr('class','wholeInterestMask hidden');
+						$('.wholeInterestMask').eq(index2).css('display','none');
+						$("input:checkbox[id='category_no']").eq(index2).removeAttr("checked");
+						cnt--;
+					}
+			}else{
+				$('.wholeInterestMask').eq(index2).attr('class','wholeInterestMask hidden');
+				$('.wholeInterestMask').eq(index2).css('display','none');
+				$("input[name=category_no]:checkbox").eq(index2).removeAttr("checked"); 
+				
+				cnt--;
+			}
+			
+		});
+	});
+	
+	
+</script>
 </head>
 <body>
 	<nav id="aside_menu">
-         <ul class="left-menu1">
-            <li><img src="./imgs/left_tit.jpg" alt=""><li>
-            <li><a href="#">Brand Story</a></li>
-            <li><a href="#">Store Info</a></li>
-            <li><a href="#">News&amp;Note</a></li>
-            <li><a href="#">Eye wear</a></li>
-         </ul>
+        
+            <div class="row center_right col-xs-4 col-lg-4">
+	   		<c:forEach var="category" items="${cate_list}">
+	   		
+	   			<div class="col-sm-4 col-md-4">
+			       <div class="Interest Module FollowButton">
+				       <div class="wholeInterestMask hidden">
+							<div class="check"> </div>
+							<div class="mask"> </div>
+					   </div>
+				       <div class="interestWrapper" style="background-color: #403F14">
+				       		<div class="interestImage" style="background-image: url('../../upload/${category.category_img_add}')"></div>
+				       		
+					       		<div class="interestLabel">
+								<h4>${category.category_name }
+									<input type="checkbox" name="category_no" id="category_no" value="${category.category_no }" />
+								</h4>
+							</div>
+				       </div>
+			       </div>
+	     		</div>
+	   		</c:forEach>
+	  
+	 </div>
       
       <ul class="left-menu2">
          <li><img src="./imgs/kamaeng.jpg" alt=""></li>

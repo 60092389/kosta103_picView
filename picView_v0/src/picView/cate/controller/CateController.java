@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import picView.cate.action.ListCategoryAction;
 import picView.cate.action.ListCategoryAction2;
+import picView.cate.action.ListCategoryAction3;
 import picView.cate.action.insertAction;
 import picView.member.action.Action;
 import picView.member.action.ActionForward;
@@ -55,6 +56,13 @@ public class CateController extends HttpServlet {
     		}catch(Exception e){
     			e.printStackTrace();
     		}
+    	}else if(command.equals("jsp/category/categoryAction.done")){
+    		action = new ListCategoryAction3();
+    		try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
     	}
     	
     	if(forward != null){
