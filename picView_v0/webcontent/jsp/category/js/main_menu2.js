@@ -24,7 +24,7 @@ $(function() {
 
 $(function() {
 		$('#aside_menu').css({
-			left : '-200px'
+			left : '-420px'
 		}).addClass('open');
 		$('body').css({
 			marginLeft : '-200px'
@@ -83,7 +83,7 @@ $(function() {
 		$('#aside_menu').toggleClass('open');
 		if ($('#aside_menu').hasClass('open')) {
 			$('#aside_menu').animate({
-				left : '-200px'
+				left : '-420px'
 			}, 300);
 			$('body').animate({
 				marginLeft : '-200px'

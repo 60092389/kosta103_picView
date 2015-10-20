@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="./js/main_menu.js"></script>
+<script type="text/javascript" src="./js/main_menu2.js"></script>
 <script type="text/javascript" src="./js/notipopup.js"></script>
 <script src="./js/siteSecurity.js"></script>
 <script type="text/javascript" src="./js/jquery.scrollUp.min.js"></script>
@@ -53,11 +53,10 @@
 </head>
 <body>
 	<nav id="aside_menu">
-        
-            <div class="row center_right col-xs-4 col-lg-4">
+            <div id="picture_menu" class="row center_right col-xs-4 col-lg-4">
 	   		<c:forEach var="category" items="${cate_list}">
 	   		
-	   			<div class="col-sm-4 col-md-4">
+	   			<div id="picture" class="col-sm-4 col-md-4">
 			       <div class="Interest Module FollowButton">
 				       <div class="wholeInterestMask hidden">
 							<div class="check"> </div>
@@ -77,10 +76,7 @@
 	   		</c:forEach>
 	  
 	 </div>
-      
-      <ul class="left-menu2">
-         <li><img src="./imgs/kamaeng.jpg" alt=""></li>
-      </ul>
+
       <a href="#" id="menubutton"><img src="./imgs/menu_button2.PNG" alt=""></a>
    </nav>
 </body>

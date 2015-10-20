@@ -311,3 +311,7 @@ src->picView.cate.controller -> CateController.java 수정
 
 2015/10/20/ 21:13 최연식
 (페이징처리한다함) jsp->admin->css-> admin.css 위치 조정및 수정
+
+2015/10/21 12:05 황재준
+카테고리 폼 옆 사이드바 수정
+jsp -> category
