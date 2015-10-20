@@ -5,9 +5,18 @@
 
 <mapper namespace="picView.cate.mapper.CateMapper">
 	<cache />
+	
+	<insert id="insertCategory" parameterType="Category">
+		insert into category(
+			 category_no, category_name, category_img_add, category_date, category_seq
+		)
+		values(
+			category_seq.nextval, #{category_name}, #{category_img_add}, SYSDATE, #{category_seq}
+		)
+	</insert>
 
 	<select id="ListCategory" resultType="Category">
-		select * from category order by category_no
+		select * from category order by category_seq
 	</select>
 	
 </mapper>

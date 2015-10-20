@@ -289,3 +289,13 @@ mybatis-config.xml 수정......... 마지막....
 2015/10/19 17:52 황재준
 카테고리별 폼 추가(미완)
 jsp -> basic 복붙 해주세요
+
+2015/10/20 12:10 박준병
+create sequence category_seq 생성하시길
+jsp->admin->category_Admin.jsp수정
+jsp->admin->index.html실행하면 category_Admin.jsp가 실행됨
+jsp->admin->css->admin.css 수정
+jsp->layout->adminHeader.jsp에 카테고리관리 링크검
+src->picView.cate.action, controller, mapper, model 다 다시받을것
+webcontent에 upload폴더 만들어놓을것!!필수필수우해해햏
+

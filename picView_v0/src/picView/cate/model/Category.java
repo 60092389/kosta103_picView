@@ -5,6 +5,14 @@ public class Category {
 	private String category_date;
 	private String category_name;
 	private String category_img_add;
+	private int category_seq;
+	
+	public int getCategory_seq() {
+		return category_seq;
+	}
+	public void setCategory_seq(int category_seq) {
+		this.category_seq = category_seq;
+	}
 	public int getCategory_no() {
 		return category_no;
 	}

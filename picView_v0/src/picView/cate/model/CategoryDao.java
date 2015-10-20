@@ -28,6 +28,26 @@ public class CategoryDao {
 	      }
 	      return new SqlSessionFactoryBuilder().build(input);
 	   }
+	
+	public int insertCategory(Category category){
+		SqlSession sqlSession = getSessionFactory().openSession();		
+		int re = -1;
+		
+		try{
+			re = sqlSession.getMapper(CateMapper.class).insertCategory(category);
+			if(re > 0){
+				sqlSession.commit();
+			}else{
+				sqlSession.rollback();
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			sqlSession.close();
+		}		
+		
+		return re;
+	}
 	   
 	public List<Category> selectCategory(){
 		SqlSession sqlSession = getSessionFactory().openSession();

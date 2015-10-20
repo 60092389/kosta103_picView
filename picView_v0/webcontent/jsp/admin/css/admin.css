@@ -109,8 +109,20 @@ table a:HOVER, a:FOCUS{
 	margin-top: 20px;
 	width: 700px;
 	float: right;
+	height: 700px;
 }
 
 .button-css{
 	text-align: center;
+}
+
+.category-list{
+	width: 800px;
+	height: 700px;
+	float: right;
+	text-align: center;
+}
+
+.category-list-table{
+	height: 700px;
 }
