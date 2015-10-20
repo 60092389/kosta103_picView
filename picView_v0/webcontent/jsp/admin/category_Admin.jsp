@@ -36,6 +36,7 @@
 						<td><input type="text" name="category_seq" class="form-control"></td>
 					</tr>
 				</table>
+				<input type="submit" value="추가" class="btn">
 			</form>	
 		</div>
 		
