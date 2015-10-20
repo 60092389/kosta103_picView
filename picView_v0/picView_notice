@@ -308,3 +308,6 @@ jsp->category 싹다받으세요
 src->picView.cate.action -> ListCaegoryAction3.java 추가
 src->picView.cate.controller -> CateController.java 수정
 
+
+2015/10/20/ 21:13 최연식
+(페이징처리한다함) jsp->admin->css-> admin.css 위치 조정및 수정
