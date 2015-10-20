@@ -298,4 +298,4 @@ jsp->admin->css->admin.css 수정
 jsp->layout->adminHeader.jsp에 카테고리관리 링크검
 src->picView.cate.action, controller, mapper, model 다 다시받을것
 webcontent에 upload폴더 만들어놓을것!!필수필수우해해햏
-
+member.xml 수정
