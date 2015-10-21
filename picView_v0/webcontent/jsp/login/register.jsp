@@ -1,4 +1,5 @@
 <%@page import="picView.cate.model.Category"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -8,7 +9,7 @@
 <link href="./bootstrap.min.css" rel="stylesheet">
 <link href="./custom2.css" rel="stylesheet">
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
-<link href="../../jsp/login/css/register.css" rel="stylesheet">
+<link href="../../jsp/login/css/register7.css" rel="stylesheet">
 <link href="../../css/picView_custom.css" rel="stylesheet">
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script src="jquery.validate.js"></script>
@@ -67,7 +68,7 @@
 	<div class="contents">
 	
 	   <!-- 가입폼 -->
-		<div class="center_left col-xs-7 col-lg-7">
+		<div id="register_area" class="center_left col-xs-7 col-lg-7">
 		  <div class="form-group">
 			 <label for="Name" class="col-xs-2 col-lg-2 control-label"></label>
 				<div class="col-xs-3 col-lg-5 col-sm-5" >
@@ -78,7 +79,7 @@
   
         <div class="form-group">   
             <label for="Name" class="col-xs-2 col-lg-2 control-label"></label>
-            <div class="col-xs-7 col-lg-7 col-sm-7">
+            <div id="email_area" class="col-xs-7 col-lg-7 col-sm-7">
                 <input type="email" class="form-control " placeholder="이메일 형식의 아이디" name="email">
                 <span class="help-block">아이디는 반드시 abc@asdf.com 처럼 이메일 형식으로 입력해 주세요. </span>  
             </div>
@@ -86,7 +87,7 @@
 
         <div class="form-group">   
             <label for="password" class="col-xs-2 col-lg-2 control-label"></label>
-            <div class="col-xs-5 col-lg-5 col-sm-5">
+            <div id="pass_area" class="col-xs-5 col-lg-5 col-sm-5">
                 <input type="password" class="form-control" placeholder="비밀번호" name="pass"> 
             </div>
         </div>
@@ -124,20 +125,18 @@
         	<br>
                <div class="form-group"> 
                  <label for="gender" class="col-xs-2 col-lg-2 control-label"></label>
-        			<div class="form-group col-sm-7 col-lg-7">	
+        			<div id="gender_area" class="form-group col-sm-7 col-lg-7">	
         			&nbsp;&nbsp;
 				 <input type="radio" name="gender" value="남자">남자&nbsp;&nbsp;&nbsp;&nbsp;
 				 <input type="radio" name="gender" value="여자">여자
 				 </div>
 				 </div>
-				 <input type="submit"  id="loginbutton" value="가입하기" class="btn btn-primary btn-lg">
-			
 		</div>
 
 		
 		<!-- 카테고리 -->
 	
-	   <div class="row center_right col-xs-4 col-lg-4">
+	   <div id="category_area" class="row center_right col-xs-4 col-lg-4">
 	   		<c:forEach var="category" items="${cate_list}">
 	   		
 	   			<div class="col-sm-4 col-md-4">

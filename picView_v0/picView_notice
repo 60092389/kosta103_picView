@@ -354,4 +354,7 @@ myRoom-> 안의 모든 jsp파일 다시받을것 myRoom 메뉴바의 activity �
 css->picView_custom.css 수정
 jsppage문서 된것 안된것 조금된것 구분해서 체크해놓음
 
-             
+2015/10/21 16:33 황재준
+jsp -> login -> css -> register7.css 수정
+             -> register.jsp 수정
+회원가입폼 수정
