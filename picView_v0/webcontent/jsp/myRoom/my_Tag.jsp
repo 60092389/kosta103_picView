@@ -35,8 +35,8 @@
 				data-toggle="dropdown"> 그 외 <span class="caret"></span>
 			</a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#">태그별</a>
-					<li><a href="#">인기별</a>
+					<li><a href="my_Tag.jsp">태그별</a>
+					<li><a href="my_Popular_Hit.jsp">인기별</a>
 					<li><a href="#">다운로드 기록</a>
 					<li><a href="#">프로필</a>
 				</ul></li>

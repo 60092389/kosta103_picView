@@ -27,7 +27,7 @@
 	<div id="myMenu_navi">
 		<ul class="nav nav-pills">
 			<li class="menu"><a href="#">사진 관리</a></li>
-			<li class="menu"><a href="#">보여 주기</a></li>
+			<li class="menu"><a href="my_Show.jsp">보여 주기</a></li>
 			<li class="menu"><a href="#">사진첩</a></li>
 			<li class="menu"><a href="#">관심 사진</a></li>
 			<li class="menu"><a href="follow.jsp">친구 목록</a></li>
@@ -35,8 +35,8 @@
 				data-toggle="dropdown"> 그 외 <span class="caret"></span>
 			</a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#">태그별</a>
-					<li><a href="#">인기별</a>
+					<li><a href="my_Tag.jsp">태그별</a>
+					<li><a href="my_Popular_Hit.jsp">인기별</a>
 					<li><a href="#">다운로드 기록</a>
 					<li><a href="#">프로필</a>
 				</ul></li>

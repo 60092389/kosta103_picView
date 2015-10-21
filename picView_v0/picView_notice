@@ -343,3 +343,15 @@ mybatis-config.xml 수정햇음요
 2015/10/21 13:38 황재준
 jsp -> admin -> category_Admin.jsp 수정
              -> css -> admin.css 수정
+
+2015/10/21 16:10 박준병             
+jsp->layout->header.jsp 수정
+회원메뉴로 바꾸고
+회원메뉴 잘못되있어서 다 드롭박스 달고 수정함
+링크다걸어놈 어드민헤더랑 그냥헤더
+jsp->layout->adminHeader.jsp 수정
+myRoom-> 안의 모든 jsp파일 다시받을것 myRoom 메뉴바의 activity 활성메뉴별로시킴
+css->picView_custom.css 수정
+jsppage문서 된것 안된것 조금된것 구분해서 체크해놓음
+
+             

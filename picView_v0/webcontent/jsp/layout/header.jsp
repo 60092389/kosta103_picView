@@ -39,7 +39,7 @@
 			</div>
 
 			<!-- 비회원 -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse row">
+			<!-- <div class="collapse navbar-collapse navbar-ex1-collapse row">
 				<ul class="nav navbar-nav">
 
 					<li><a href="#">모아보기</a></li>
@@ -60,12 +60,12 @@
 					<li><a href="../login/index.html">가입</a></li>
 				</ul>
 
-			</div>
+			</div> -->
 			<!-- 비회원 끝 -->
 
 			<%-- <%
 		}else if(request.getParameter("test").equals("2")){//회원일경우
-  		%>  
+  		%>   --%>
 	      <div class="navbar-header">
 	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 	          <span class="sr-only">Toggle navigation</span>
@@ -73,16 +73,38 @@
 	          <span class="icon-bar"></span>
 	          <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="#">로고 </a>
+	        <a class="navbar-brand" href="#"> </a>
 	      </div>
 
 			<!-- 회원메뉴 시작 -->
 	      <div class="collapse navbar-collapse navbar-ex1-collapse row">
 	        <ul class="nav navbar-nav">
-	          <li><a href="#">내공간</a></li>
-	          <li><a href="#">모아보기</a></li>
+	          <li><a class="dropdown active" href="#" data-toggle="dropdown">
+	          		내공간<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	          		<li><a href="#">내사진 관리</a></li>
+	          		<li><a href="../myRoom/my_Show.jsp">보여주기</a></li>
+	          		<li><a href="#">앨범</a></li>
+	          		<li><a href="#">좋아하는 사진</a></li>
+	          		<li><a href="../myRoom/follow.jsp">친구목록</a></li>
+	          		<li>&nbsp;</li>
+	          		<li><p>그외</p></li>
+	          		<li><a href="../myRoom/my_Tag.jsp">&nbsp;태그</a></li>
+	          		<li><a href="../myRoom/my_Popular_Hit.jsp">&nbsp;인기</a></li>
+	          		<li><a href="#">&nbsp;다운로드 기록</a></li>
+	          		<li><a href="#">&nbsp;프로필</a></li>
+	          	</ul>
+	          </li>
+	          <li><a class="dropdown active" href="#" data-toggle="dropdown">
+	          		둘러보기<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	          		<li><a href="../collection/recent_Pic.jsp">최근사진</a></li>
+	          		<li><a href="#">카테고리별</a></li>
+	          		<li><a href="#">인기사진</a></li>
+	          	</ul>
+	          </li>
 	          <li><a href="#">도움말</a></li>
-	          <li style="width:325px">&nbsp;</li>
+	          <li style="width:350px">&nbsp;</li>
 	          
 	          <li>
 	          	<form class="navbar-form navbar-right" role="search">
@@ -92,16 +114,23 @@
 	          	    <button type="submit" class="btn btn-default">Submit</button>
 	        	</form>
 	          </li>
-	          <li><a href="#">업로드버튼</a></li>
-	          <li><a href="#">로그인</a></li>
-	          <li><a href="#">가입</a></li>
+	          <li><a href="#"><span id="upload"
+							class="glyphicon glyphicon-cloud-upload"></span></a></li>
+	          <li><a class="dropdown active" href="#" data-toggle="dropdown">
+	          	계정<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	          		<li><a href="../account/message.jsp">쪽지함</a></li>
+	          		<li><a href="#">상세 도움말</a></li>
+	          		<li><a href="../account/accountSet.jsp">계정 설정</a></li>
+	          	</ul>
+	          </li>
 	        </ul>
 	        
 	      </div>
 	      <!-- 회원메뉴 끝 -->
-	      <%
+<%-- 	      <%
 			}
-	      %> --%>
+	      %>  --%>
 		</div>
 
 		</nav>

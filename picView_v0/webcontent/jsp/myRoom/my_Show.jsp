@@ -12,7 +12,7 @@
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../css/picView_custom.css" rel="stylesheet">
 <link href="../../jsp/myRoom/css/my_Menu.css" rel="stylesheet">
-<link href="../../jsp/myRoom/css/my_Show1.css" rel="stylesheet">
+<link href="../../jsp/myRoom/css/my_Popular_Good.css" rel="stylesheet">
 </head>
 <body>
 

@@ -3,6 +3,11 @@
 @CHARSET "utf-8";
 
 
+/* .navbar .container{
+	width: 1300px !important;
+
+} */
+
 /**************************************************************/
 											/* header css */
 /**************************************************************/
@@ -48,13 +53,23 @@ body {
 	padding-bottom: 12px;
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus{
+	background-color: black !important;
+}
+
+li p{
+	font-weight: bold;
+	margin-left: 20px
+}
+
 
 /**************************************************************/
 											/* body css */
 /**************************************************************/
 
 .contents{
-	min-height: 600px !important;
+	min-height: 700px !important;
 }
 
 
@@ -107,3 +122,4 @@ body {
 .foot .foot-container .foot-container-bottom{
 	height : 30%;
 }
+

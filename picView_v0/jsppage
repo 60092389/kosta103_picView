@@ -2,59 +2,59 @@
 
 - Basic
 
-  help.jsp		도움말(메뉴바에 있는 도움말)
-  upload.jsp		업로드(히든으로 카테고리별 폼 다넣음)
-  picDetail.jsp		사진 상세보기
-  reply.jsp		댓글
-  activity.jsp		활동 알림
+  help.jsp		도움말(메뉴바에 있는 도움말)  - x
+  upload.jsp		업로드(히든으로 카테고리별 폼 다넣음)  - △
+  picDetail.jsp		사진 상세보기 - △
+  reply.jsp		댓글 - x
+  activity.jsp		활동 알림 - x
 
 
 - login
 
-  loginForm.jsp		로그인
-  joinForm.jsp		회원가입
+  loginForm.jsp		로그인 - △
+  joinForm.jsp		회원가입 - O
 
 
 - index
   image폴더도 생성할것
-  index.jsp		사이트 첫페이지
+  index.jsp		사이트 첫페이지 - O
 
 
 - layout(모든 페이지에 다 들어감)
-  adminHeader.sp	관리자헤더
-  header.jsp		헤더
-  footer.jsp	 	푸터
+  adminHeader.sp	관리자헤더 - O
+  header.jsp		헤더 - O
+  footer.jsp	 	푸터 - △
   
 - main
 
-  loginMain.jsp		로그인되었을 때 메인(뉴스피드)
-  friendList.jsp	친구목록(메인에 쓸거여)
-  best_User.jsp		베스트 유저
+  loginMain.jsp		로그인되었을 때 메인(뉴스피드) - △
+  friendList.jsp	친구목록(메인에 쓸거여) - X
+  best_User.jsp		베스트 유저 - X
 
 
 - Download
 
-  Download.jsp	다운로드
+  Download.jsp	다운로드 - X
 
 
 - MyRoom 	내 공간
 
-  my_Menu.jsp		내 공간 메뉴바
+  my_Menu.jsp		내 공간 메뉴바 - O
 
-  my_Manage.jsp		내 공간(사진관리)	* 메인
-  my_Show.jsp		내 공간(보여주기)
-  my_Album.jsp		내 공간(사진첩)
-  my_Good.jsp		내 공간(관심 사진)
-  my_Friend.jsp		내 공간(친구 목록)
-  my_Tag.jsp		내 공간(그 외 - 태그별)
+  my_Manage.jsp		내 공간(사진관리)	* 메인 - X
+  my_Show.jsp		내 공간(보여주기) - △
+  my_Album.jsp		내 공간(사진첩) - X
+  my_Good.jsp		내 공간(관심 사진) - X
+  my_Friend.jsp		내 공간(친구 목록) - △
+  my_Tag.jsp		내 공간(그 외 - 태그별) - △
 
-  my_Popular.jsp	내 공간(그 외 - 인기별)
-  my_Popular_Hit.jsp	내 공간(그 외 - 인기별) * 조회수
-  my_Popular_Good.jsp	내 공간(그 외 - 인기별) * 좋아하는 사진
-  my_Popular_Reply.jsp	내 공간(그 외 - 인기별) * 댓글
+  my_Popular.jsp	내 공간(그 외 - 인기별) 
+  my_Popular_Hit.jsp	내 공간(그 외 - 인기별) * 조회수 - △
+  my_Popular_Good.jsp	내 공간(그 외 - 인기별) * 좋아하는 사진 - △
+  my_Popular_Reply.jsp	내 공간(그 외 - 인기별) * 댓글 - △
 
-  my_Download.jsp	내 공간(그 외 - 다운로드 기록)
-  my_Profile.jsp	내 공간(그 외 - 프로필) 
+  my_Download.jsp	내 공간(그 외 - 다운로드 기록) - X
+  my_Profile.jsp	내 공간(그 외 - 프로필) - X
 			   * 이름, 성, 성별, 자기소개, 직업, 고향, 살고있는 도시, 국가
   
  
@@ -63,24 +63,24 @@
 
 - Collection	모아보기
 
-  recent_Pic.jsp	최근사진		
-  category_Pic.jsp	카테고리별 사진
-  popular_Pic.jsp	인기사진
+  recent_Pic.jsp	최근사진 - △
+  category_Pic.jsp	카테고리별 사진 - X
+  popular_Pic.jsp	인기사진 - X
 
 
 - account  계정
 
-  accountSet.jsp	계정설정
-  detailHelp.jsp	자세한 도움말
-  message.jsp		메시지함
-  messagesend.jsp   메세지보내기
+  accountSet.jsp	계정설정 - X
+  detailHelp.jsp	자세한 도움말 - X
+  message.jsp		메시지함 - △
+  messagesend.jsp   메세지보내기 - △
 
 
 
 
 - Category
   
-  categoryForm.jsp	카테고리 폼
+  categoryForm.jsp	카테고리 폼 - O
 
 
 
@@ -88,11 +88,11 @@
 
 * 관리자(Admin)
 
-- member_Admin.jsp	회원관리
-- mainPage_Admin.jsp	메인페이지 관리(게시판형식 리스트로 - 썸네일이용, 검색가능, 날짜범위지정해서도 검색 가능)
-- report_Admin.jsp	신고물 관리
-- category_Admin.jsp	카테고리 관리
-- tag_Admin.jsp	많이 사용된 태그 관리
+- member_Admin.jsp	회원관리 - O
+- mainPage_Admin.jsp	메인페이지 관리(게시판형식 리스트로 - 썸네일이용, 검색가능, 날짜범위지정해서도 검색 가능) - X
+- report_Admin.jsp	신고물 관리 - △
+- category_Admin.jsp	카테고리 관리 - O
+- tag_Admin.jsp	많이 사용된 태그 관리 - △
 
 
 
