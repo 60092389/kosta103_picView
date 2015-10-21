@@ -18,7 +18,7 @@
 	</div>
 
 	
-	<div class="admin-center contents">
+	<div id="category" class="admin-center contents">
 		<div class="category-add">
 			<h1>카테고리추가</h1>
 			<form class="form-horizontal" action="insertAction.done" method="post" enctype="multipart/form-data">
@@ -36,7 +36,7 @@
 						<td><input type="text" name="category_seq" class="form-control"></td>
 					</tr>
 				</table>
-				<input type="submit" value="추가" class="btn">
+				<input type="submit" value="추가" id="add_btn" class="btn">
 			</form>	
 		</div>
 		

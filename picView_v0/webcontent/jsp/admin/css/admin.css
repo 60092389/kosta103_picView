@@ -1,124 +1,138 @@
 @CHARSET "UTF-8";
 
-thead th{
+thead th {
 	text-align: center;
 }
 
-table a{
+table a {
 	color: black !important;
 }
-table a:HOVER, a:FOCUS{
+
+table a:HOVER, a:FOCUS {
 	color: #0553a9 !important;
 }
 
-.admin-center{
+.admin-center {
 	width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 /**************************************************************/
-											/* member_Admin css */
+/* member_Admin css */
 /**************************************************************/
-
-.member-admin-center td{
+.member-admin-center td {
 	font-size: 12px;
 }
 
-#member-admin-center{
-
+#member-admin-center {
+	
 }
 
-#member-admin-center .member_table{
+#member-admin-center .member_table {
 	width: 49%;
 	float: left;
 	text-align: center;
 }
 
-#member-admin-center .black_table{
+#member-admin-center .black_table {
 	width: 49%;
 	float: right;
 	text-align: center;
 }
 
-.memberlist thead th{
+.memberlist thead th {
 	font-size: 12px;
 }
-.blacklist thead th{
+
+.blacklist thead th {
 	font-size: 12px;
 }
 
 /**************************************************************/
-											/* report_Admin css */
+/* report_Admin css */
 /**************************************************************/
-
-.reportlist-tbody p{
-	margin-top: 25px; 
+.reportlist-tbody p {
+	margin-top: 25px;
 }
 
-.reportlist-tbody img{
+.reportlist-tbody img {
 	width: 100px;
 	height: 70px;
 }
 
-#report-admin-center{
-
+#report-admin-center {
+	
 }
-#report-admin-center .report_table .reportlist{
+
+#report-admin-center .report_table .reportlist {
 	text-align: center;
 }
 
-.btn-css{
+.btn-css {
 	margin-top: 15px !important;
 }
 
 /**************************************************************/
-											/* tag_Admin css */
+/* tag_Admin css */
 /**************************************************************/
-
-#tag-admin-center{
-
+#tag-admin-center {
+	
 }
 
-.tag_table{
+.tag_table {
 	width: 400px;
 	float: left;
 }
 
-.tag_graph{
+.tag_graph {
 	width: 800px;
 	float: right;
 	border: 1px solid red;
 }
 
-#tag-admin-center .tag_table .taglist{
+#tag-admin-center .tag_table .taglist {
 	text-align: center;
 }
 
 /**************************************************************/
-											/* category_Admin css */
+/* category_Admin css */
 /**************************************************************/
-
-.category-add{
-	margin-top: 20px;
-	width: 500px;
-	float: left;
+#category{
+	height: 700px;
 }
 
-.category-manage{
+.category-add {
+	margin-left: 50px; margin-top : 20px;
+	width: 500px;
+	float: left;
+	margin-top: 20px;
+}
+
+#add_btn{
+	margin-left: 220px;
+}
+
+.category-manage {
 	margin-top: 20px;
 	width: 700px;
 	float: right;
 	height: 500px;
 }
 
-.button-css{
+.category-list-table img {
+	width: 80px;
+	height: 80px;
+}
+
+.button-css {
 	text-align: center;
 }
 
-.category-list{
-	width: 800px;
+.category-list {
+	height: 605px;
+	width: 700px;
+	margin-right: 100px;
 	float: right;
 	text-align: center;
 }
-
