@@ -76,7 +76,7 @@
 									<form action="listAction.done" method="post" class="form-horizontal">
 										<input type="checkbox" name="area" value="category_no"/>카테고리번호
 										<input type="checkbox" name="area" value="category_name"/>카테고리명
-										<input type="checkbox" name="area" value="cateogry_seq"/>카테고리순서
+										<input type="checkbox" name="area" value="category_seq"/>카테고리순서
 										<input type="text" name="searchKey" size="15"/>
 										<input type="hidden" name="temp" value="temp"/>
 										<input type="submit" value="검색">

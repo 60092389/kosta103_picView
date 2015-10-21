@@ -15,7 +15,7 @@ import picView.member.action.ActionForward;
 
 public class ListCategoryAction2 implements Action {
 
-	private static final int PAGE_SIZE = 4;
+	private static final int PAGE_SIZE = 5;
 	
 	@Override
 	public ActionForward execute(HttpServletRequest request,

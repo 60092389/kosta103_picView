@@ -322,3 +322,9 @@ picView.cate.action, controller, mapper, model 패키지들 통째로 다받아�
 register.jsp용이랑 category.jsp용 카테고리리스트불러오기 메소드새로만들고 디비새로만들고 여러가지수정함
 jsp->admin->cateogry_Admin.jsp 카테고리목록에 검색기능이랑 페이징처리해놓음 받아가도록
 index.html로 실행하면됨
+
+
+2015/10/21 10:52 박준병
+picView.cate.action.ListCategoryAction2 수정함
+jsp->admin->category_Admin.jsp 수정
+jsp->css->admin.css 수정
