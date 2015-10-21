@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="picView.blacklist.mapper.BlackMapper">
+	<cache />
+	<insert id="insertBlack" parameterType="BlackList">
+		insert into blacklist (black_no, mem_no, black_date)
+		values(black_seq.nextval, #{mem_no}, SYSDATE)
+	</insert>
+	
+	<select id="listBlack" resultType="BlackResult"  parameterType="BlackSearch" >
+	
+		select b.black_no , m.mem_no, m.mem_name, m.mem_id, b.black_date
+		from blacklist b , member m
+		where m.mem_no = b.mem_no
+		<if test="blackarea != null">
+			and
+			<foreach collection="blackarea" item="are" separator="or" open="(" close=")">
+				${ are } LIKE #{ blacksearchKey }
+			</foreach>
+		</if>
+		order by black_no
+	</select>
+	
+	<select id="totalRow" resultType="int" parameterType="BlackSearch">
+		select count(*) 
+		from blacklist
+		<if test="blackarea != null">
+			<where>
+			<foreach collection="blackarea" item="are" separator="and">
+				${ are } LIKE #{ blacksearchKey }
+			</foreach>
+			</where>
+		</if>
+	</select>
+	
+
+	<delete id="deleteBlack" parameterType="int">
+		delete from blacklist
+	    where mem_no = #{mem_no}
+	
+	</delete>
+	
+</mapper>
+

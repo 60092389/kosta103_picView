@@ -1,6 +1,9 @@
 package picView.member.model;
 
-public class Member {
+import java.io.Serializable;
+import java.sql.Timestamp;
+
+public class Member implements Serializable{
 	private int mem_no;
 	private String mem_name;
 	private String mem_id;
@@ -10,7 +13,14 @@ public class Member {
 	private String category_no;
 	private String black_check;
 	private String pic_count;
-
+	private Timestamp mem_date;
+	
+	public Timestamp getMem_date() {
+		return mem_date;
+	}
+	public void setMem_date(Timestamp mem_date) {
+		this.mem_date = mem_date;
+	}
 	public int getMem_no() {
 		return mem_no;
 	}
@@ -47,15 +57,12 @@ public class Member {
 	public void setMem_sex(String mem_sex) {
 		this.mem_sex = mem_sex;
 	}
-	
+
 	public String getCategory_no() {
 		return category_no;
 	}
-
-	public void setCategory_no(String category) {
-		System.out.println("category= " + category);
-		
-		this.category_no = category;
+	public void setCategory_no(String category_no) {
+		this.category_no = category_no;
 	}
 	public String getBlack_check() {
 		return black_check;

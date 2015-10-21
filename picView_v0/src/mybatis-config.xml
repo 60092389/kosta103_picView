@@ -8,6 +8,9 @@
 		<typeAlias type="picView.member.model.Member" alias="Member"/>
 		<typeAlias type="picView.cate.model.Category" alias="Category"/>
 		<typeAlias type="picView.cate.model.Search" alias="Search"/>
+		 <typeAlias type="picView.blacklist.model.BlackSearch" alias="BlackSearch"/>
+		<typeAlias type="picView.blacklist.model.BlackList" alias="BlackList"/>
+		<typeAlias type="picView.blacklist.model.BlackResult" alias="BlackResult"/>
 	</typeAliases>
 	
 	<environments default="development">
@@ -22,6 +25,8 @@
 	<mappers>
 		<mapper resource="picView/member/mapper/Member.xml"/>
 		<mapper resource="picView/cate/mapper/Category.xml"/>
+		<mapper resource="picView/admin/mapper/MemberList.xml" />
+		<mapper resource="picView/blacklist/mapper/Black.xml"/>
 	</mappers>
 	
 </configuration>

@@ -358,3 +358,17 @@ jsppage문서 된것 안된것 조금된것 구분해서 체크해놓음
 jsp -> login -> css -> register7.css 수정
              -> register.jsp 수정
 회원가입폼 수정
+
+2015/10/21 17:18 홍채영
+1. Member.xml 수정
+2. membermapper 수정
+3. Member , memberDao 수정
+4. MemberController 
+5. picView.admin.* 모든 패키지 & picView.blacklist.* 모든 패키지 추가
+6. 마이바티스 수정
+====
+jsp -> admin -> css -> admin1.css 추가(admin.css 없앰)
+jsp -> admin -> member_Admin.jsp 수정
+jsp -> admin -> ind.html 추가
+=====
+jsp-> login -> index.html 수정

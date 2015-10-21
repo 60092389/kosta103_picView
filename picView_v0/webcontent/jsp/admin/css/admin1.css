@@ -13,7 +13,6 @@ table a:HOVER, a:FOCUS {
 }
 
 .admin-center {
-	width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -26,19 +25,26 @@ table a:HOVER, a:FOCUS {
 }
 
 #member-admin-center {
-	
+	height: 850px;
+	width: 1330px;
 }
 
 #member-admin-center .member_table {
-	width: 49%;
 	float: left;
 	text-align: center;
+	width: 650px;
+	height: 578px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 #member-admin-center .black_table {
-	width: 49%;
 	float: right;
 	text-align: center;
+	width: 580px;
+	height: 578px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 .memberlist thead th {
@@ -98,41 +104,18 @@ table a:HOVER, a:FOCUS {
 /**************************************************************/
 /* category_Admin css */
 /**************************************************************/
-#category{
-	height: 700px;
-}
-
 .category-add {
-	margin-left: 50px; margin-top : 20px;
+	margin-top: 20px;
 	width: 500px;
 	float: left;
-	margin-top: 20px;
-}
-
-#add_btn{
-	margin-left: 220px;
 }
 
 .category-manage {
 	margin-top: 20px;
 	width: 700px;
 	float: right;
-	height: 500px;
-}
-
-.category-list-table img {
-	width: 80px;
-	height: 80px;
 }
 
 .button-css {
-	text-align: center;
-}
-
-.category-list {
-	height: 605px;
-	width: 700px;
-	margin-right: 100px;
-	float: right;
 	text-align: center;
 }

@@ -1,4 +1,4 @@
-package picView.member.controller;
+package picView.admin.controller;
 
 import java.io.IOException;
 
@@ -9,20 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import picView.admin.action.DeleteMember;
+import picView.admin.action.ListMember;
+import picView.admin.action.ActionForward;
+import picView.admin.action.Action;
 
-
-
-import picView.cate.action.ListCategoryAction;
-import picView.member.action.ActionForward;
-import picView.member.action.Action;
-import picView.member.action.InsertAction;
-import picView.member.action.loginAction;
-
-@WebServlet("*.so")
-public class MemberController extends HttpServlet {
+@WebServlet("*.ao")
+public class AdminController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public MemberController() {
+    public AdminController() {
         super();
     }
     
@@ -41,27 +37,16 @@ public class MemberController extends HttpServlet {
     	ActionForward forward = null;
     	Action action = null;
     	
-    	
-    	if(command.equals("jsp/login/form.so")){
-    		
-    		action = new ListCategoryAction();
+    	if(command.equals("jsp/admin/list.ao")){
+    		action = new ListMember();
     		try {
-   				forward = action.execute(request, response);
-				
+				forward = action.execute(request, response);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-    		
-    	}else if(command.equals("jsp/login/insertAction.so")){
-    	  	action = new InsertAction();
-    		try {
-   				forward = action.execute(request, response);
-				
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-    	}else if(command.equals("jsp/login/loginForm.so")){
-    		action = new loginAction();
+    	}
+    	else if(command.equals("jsp/admin/deleteMember.ao")){
+    		action = new DeleteMember();
     		try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
@@ -89,6 +74,5 @@ public class MemberController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doProcess(request, response);
 	}
-
 
 }

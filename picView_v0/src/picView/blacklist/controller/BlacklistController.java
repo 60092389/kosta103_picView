@@ -1,4 +1,4 @@
-package picView.member.controller;
+package picView.blacklist.controller;
 
 import java.io.IOException;
 
@@ -9,20 +9,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import picView.blacklist.action.Action;
+import picView.blacklist.action.ActionForward;
+import picView.blacklist.action.DeleteBlack;
+import picView.blacklist.action.InsertBlack;
+import picView.blacklist.action.ListBlack;
 
-
-
-import picView.cate.action.ListCategoryAction;
-import picView.member.action.ActionForward;
-import picView.member.action.Action;
-import picView.member.action.InsertAction;
-import picView.member.action.loginAction;
-
-@WebServlet("*.so")
-public class MemberController extends HttpServlet {
+@WebServlet("*.fo")
+public class BlacklistController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public MemberController() {
+    public BlacklistController() {
         super();
     }
     
@@ -41,27 +38,23 @@ public class MemberController extends HttpServlet {
     	ActionForward forward = null;
     	Action action = null;
     	
-    	
-    	if(command.equals("jsp/login/form.so")){
-    		
-    		action = new ListCategoryAction();
+    	if(command.equals("jsp/admin/insertBlack.fo")){
+    	  	action = new InsertBlack();
     		try {
    				forward = action.execute(request, response);
 				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-    		
-    	}else if(command.equals("jsp/login/insertAction.so")){
-    	  	action = new InsertAction();
+    	}else if(command.equals("jsp/admin/listBlack.fo")){
+    		action = new ListBlack();
     		try {
-   				forward = action.execute(request, response);
-				
+				forward = action.execute(request, response);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-    	}else if(command.equals("jsp/login/loginForm.so")){
-    		action = new loginAction();
+    	}else if(command.equals("jsp/admin/deleteBlack.fo")){
+    		action = new DeleteBlack();
     		try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
@@ -89,6 +82,5 @@ public class MemberController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doProcess(request, response);
 	}
-
 
 }
