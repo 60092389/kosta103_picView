@@ -22,13 +22,14 @@ body {
 nav {
 	float: left;
 	width: 420px;
-	height: 580px;
+	height: 620px;
 	position: fixed;
 	background-color: black;
 	color: white;
 	text-align: center;
 	z-index: 1000;
 	left: -200px;
+	top: 30px;
 }
 
 #picture_menu {
@@ -84,6 +85,10 @@ nav li a:hover {
 	height: 79px;
 	padding: 6px 10px 0 0;
 	z-index: 100;
+}
+
+#menubutton img{
+	margin-top: 270px;
 }
 
 #main_header {
