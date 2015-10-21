@@ -19,7 +19,7 @@ public class ListCategoryAction implements Action{
 			HttpServletResponse response) throws Exception {
 		
 		CategoryDao dao = CategoryDao.getInstatnce();
-		List<Category> cate_list = dao.selectCategory();
+		List<Category> cate_list = dao.ListCategory2();
 		
 		request.setAttribute("cate_list", cate_list);
 		ActionForward forward = new ActionForward();

@@ -14,9 +14,31 @@
 			category_seq.nextval, #{category_name}, #{category_img_add}, SYSDATE, #{category_seq}
 		)
 	</insert>
-
-	<select id="ListCategory" resultType="Category">
+	
+	<select id="ListCategory2" resultType="Category">
 		select * from category order by category_seq
+	</select>
+
+	<select id="ListCategory" resultType="Category" parameterType="Search">
+		select * from category
+		<if test="area !=null ">
+			<where>
+				<foreach close=")" open="(" separator="or" item="are" collection="area">
+					${are} LIKE #{searchKey}
+				</foreach>
+			</where>
+		</if>
+		 order by category_seq
+	</select>
+	
+	<select resultType="int" parameterType="Search" id="countCate">
+		select count(*) from category
+		<if test="area != null">
+			<where>
+				<foreach separator="and" item="are" collection="area"> ${ are } LIKE #{ searchKey } </foreach>
+
+			</where>
+		</if>
 	</select>
 	
 </mapper>

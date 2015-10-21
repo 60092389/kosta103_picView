@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.util.List;
 
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -49,10 +50,24 @@ public class CategoryDao {
 		return re;
 	}
 	   
-	public List<Category> selectCategory(){
+	/*cateory_Admin.jsp에서 카테고리목록 표시하기 위한 메소드*/
+	public List<Category> ListCategory(int startRow, Search search){
 		SqlSession sqlSession = getSessionFactory().openSession();
 		
-		return sqlSession.getMapper(CateMapper.class).ListCategory(); 
+		return sqlSession.getMapper(CateMapper.class).ListCategory(new RowBounds(startRow, 5), search); 
 		
+	}
+	
+	/*register.jsp랑 category.jsp에서 카테고리목록 표시하기 위한 메소드*/
+	public List<Category> ListCategory2(){
+		SqlSession sqlSession = getSessionFactory().openSession();
+		
+		return sqlSession.getMapper(CateMapper.class).ListCategory2();
+	}
+	
+	public int countCate(Search search){
+		SqlSession sqlSession = getSessionFactory().openSession();
+		
+		return sqlSession.getMapper(CateMapper.class).countCate(search);
 	}
 }

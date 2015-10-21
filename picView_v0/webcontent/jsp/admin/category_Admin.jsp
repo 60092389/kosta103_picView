@@ -41,7 +41,7 @@
 		</div>
 		
 		<div class="category-manage">
-			<h1>카테고리관리</h1>
+			<!-- <h1>카테고리관리</h1> -->
 			<div class="category-list">
 				<table class="category-list-table table">
 					<thead>
@@ -54,7 +54,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="cate" items="${cate_list}">
+						<c:forEach var="cate" items="${listModel.list}">
 							<tr>
 								<td>${cate.category_no }</td>
 								<td>
@@ -70,8 +70,35 @@
 								<td>${cate.category_seq }</td>
 							</tr>
 						</c:forEach>
+						<tfoot>
+							<tr>
+								<td colspan="5">
+									<form action="listAction.done" method="post" class="form-horizontal">
+										<input type="checkbox" name="area" value="category_no"/>카테고리번호
+										<input type="checkbox" name="area" value="category_name"/>카테고리명
+										<input type="checkbox" name="area" value="cateogry_seq"/>카테고리순서
+										<input type="text" name="searchKey" size="15"/>
+										<input type="hidden" name="temp" value="temp"/>
+										<input type="submit" value="검색">
+									</form>
+								</td>
+							</tr>
+						</tfoot>
 					</tbody>
 				</table>
+				<c:if test="${listModel.startPage > 5 }">
+      		<a href = "listAction.done?pageNum=${listModel.startPage-5}">[이전]</a>
+   			</c:if>
+   
+				<c:forEach var="pageNo" begin="${listModel.startPage }" end="${listModel.endPage }">
+    		  <c:if test="${listModel.requestPage == pageNo}"><b></c:if>
+      			<a href="listAction.done?pageNum=${pageNo }">[${pageNo }]</a>
+      		<c:if test="${listModel.requestPage == pageNo }"></b></c:if>
+   			</c:forEach>
+   
+				<c:if test="${listModel.endPage < listModel.totalPageCount }">
+					<a href = "listAction.done?pageNum=${listModel.startPage+5}">[이후]</a>
+   			</c:if>
 			</div>
 		</div>
 	</div>
