@@ -429,3 +429,5 @@ jsp-> basic->js-> 파일업로드하는 js파일 11개 추가
 jsp-> basic->css->style.css, blueimp-gallery.min.css, jquery.fileupload.css 추가
  
 jsp->layout->header.jsp 수정
+사진 테이블 저장시 시퀀스 추가 
+create sequence pic_no_seq 추가하기
