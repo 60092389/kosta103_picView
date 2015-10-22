@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div id="myMenu">
-		<div id="profileBack" style="border: 2px solid blue">
+		<div id="profileBack">
 			<div class="coverPhoto">
 				<div class="coverPhoto-content fluid-centered">
 					<div class="cover-photo-edit" title="표지 사진 편집">

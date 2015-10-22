@@ -5,6 +5,13 @@
 	height : 300px;
 }
 
+#myMenu_navi{
+	height : 40px;
+	margin-top: -48px;
+	margin-left: 150px;
+}
+
+
 #profileBack{
 	height : 250px;
 }
@@ -187,6 +194,7 @@ em{
  position: absolute;
  right: 130px;
 }
+
 
 
 

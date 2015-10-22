@@ -10,6 +10,8 @@
 <title>Insert title here</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="css/my_Menu.css" rel="stylesheet">
+<link href="../../css/picView_custom.css" rel="stylesheet">
+<link href="../../jsp/myRoom/css/my_Popular_Good.css" rel="stylesheet">
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 <style type="text/css">
@@ -45,10 +47,31 @@
 	<div class="header">
 	<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
-	<div class="center contents"  >
-		<div class="center_head">
-			<jsp:include page="./my_Menu.jsp"></jsp:include>
-		</div>
+	<div class="my_Menu">
+		<jsp:include page="../myRoom/my_Menu.jsp"></jsp:include>
+	</div>
+	
+	<div id="myMenu_navi">
+		<ul class="nav nav-pills">
+			<li class="menu active"><a href="my_Manage.jsp">사진 관리</a></li>
+			<li class="menu"><a href="my_Show.jsp">보여 주기</a></li>
+			<li class="menu"><a href="#">사진첩</a></li>
+			<li class="menu"><a href="#">관심 사진</a></li>
+			<li class="menu"><a href="follow.jsp">친구 목록</a></li>
+			<li id="other" class="dropdown"><a href=""
+					data-toggle="dropdown"> 그 외 <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="my_Tag.jsp">태그별</a>
+					<li><a href="my_Popular_Hit.jsp">인기별</a>
+					<li><a href="#">다운로드 기록</a>
+					<li><a href="#">프로필</a>
+				</ul></li>
+		</ul>
+	</div>			
+	
+		
+	<div class="center contents">		
 		
 		<div class="center_left" id="myScrollspy">
 			<!-- 날짜별 사진보기  foreach 써서 날짜 넣기-->

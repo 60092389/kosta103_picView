@@ -405,3 +405,7 @@ jsp->myRoom-> my_Manage.jsp 추가
 2015/10/22 14:42 황재준
 jsp -> index -> css -> index.css 수정
 
+2015/1022 15:16 박준병
+jsp->myRoom->css폴더안에 css파일들 다수정함
+jsp->myRoom-> jsp파일들 my_Show.jsp 빼고 다수정함 my_Show.jsp빼고 다받을것
+jsp->admin->index.html 추가할것
