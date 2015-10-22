@@ -409,3 +409,23 @@ jsp -> index -> css -> index.css 수정
 jsp->myRoom->css폴더안에 css파일들 다수정함
 jsp->myRoom-> jsp파일들 my_Show.jsp 빼고 다수정함 my_Show.jsp빼고 다받을것
 jsp->admin->index.html 추가할것
+
+2015/10/22 15:41 최영혜
+picView.album.controller/picView.album.mapper/picView.album.model
+->picture와 이름겹쳐서 사용안하는 파일 삭제하고 파일들 이름 수정 ->지금 프로그램 없어서 
+기존 폴더에서 파일 다 지우고 복사붙여넣기
+
+picView.member.controller->MemberController 수정
+
+picView.picture.action
+picView.picture.controller
+picView.picture.mapper
+picView.picture.model
+기존에 있던 테스트 파일 다 지우고 다 복사붙여넣기 하기
+
+jsp-> basic->upload_index.jsp 추가 (처음에 이곳에서 실행)
+jsp-> basic-> upload.jsp 추가
+jsp-> basic->js-> 파일업로드하는 js파일 11개 추가
+jsp-> css->style.css, blueimp-gallery.min.css, jquery.fileupload.css 추가
+ 
+jsp->layout->header.jsp 수정

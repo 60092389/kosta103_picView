@@ -1,24 +1,24 @@
-package picView.album.model;
+package picView.picture.model;
+
+import java.sql.Timestamp;
 
 
 public class Picture {
-	private int pic_no;
-	private String pic_title;
-	private int mem_no;
-	private int category_no;
-	private String tag_name;
-	private String pc_content;
-	private int pic_count;
-	private int good_count;
-	private String pic_add;
-	private int noti_count;
-	private String pic_info1;
-	private String pic_info2;
-	private String pic_info3;
-	private String pic_date;
-	private String pic_open;
-	
-	
+	private int pic_no; //사진번호 
+	private String pic_title; //사진제목
+	private int mem_no; //회원번호
+	private int category_no; //카테고리번호
+	private String tag_name; //태그내용
+	private String pic_content; //사진내용
+	private int pic_count; //조회수
+	private int good_count; //좋아요 개수
+	private String pic_add; //이미지 경로
+	private int noti_count; //신고횟수
+	private String pic_info_1; //추가정보1
+	private String pic_info_2; //추가정보2
+	private String pic_info_3; //추가정보3
+	private Timestamp pic_date; //업로드 날짜
+	private String pic_open; //사진 공개범위
 	public int getPic_no() {
 		return pic_no;
 	}
@@ -49,11 +49,11 @@ public class Picture {
 	public void setTag_name(String tag_name) {
 		this.tag_name = tag_name;
 	}
-	public String getPc_content() {
-		return pc_content;
+	public String getPic_content() {
+		return pic_content;
 	}
-	public void setPc_content(String pc_content) {
-		this.pc_content = pc_content;
+	public void setPic_content(String pic_content) {
+		this.pic_content = pic_content;
 	}
 	public int getPic_count() {
 		return pic_count;
@@ -79,28 +79,28 @@ public class Picture {
 	public void setNoti_count(int noti_count) {
 		this.noti_count = noti_count;
 	}
-	public String getPic_info1() {
-		return pic_info1;
+	public String getPic_info_1() {
+		return pic_info_1;
 	}
-	public void setPic_info1(String pic_info1) {
-		this.pic_info1 = pic_info1;
+	public void setPic_info_1(String pic_info_1) {
+		this.pic_info_1 = pic_info_1;
 	}
-	public String getPic_info2() {
-		return pic_info2;
+	public String getPic_info_2() {
+		return pic_info_2;
 	}
-	public void setPic_info2(String pic_info2) {
-		this.pic_info2 = pic_info2;
+	public void setPic_info_2(String pic_info_2) {
+		this.pic_info_2 = pic_info_2;
 	}
-	public String getPic_info3() {
-		return pic_info3;
+	public String getPic_info_3() {
+		return pic_info_3;
 	}
-	public void setPic_info3(String pic_info3) {
-		this.pic_info3 = pic_info3;
+	public void setPic_info_3(String pic_info_3) {
+		this.pic_info_3 = pic_info_3;
 	}
-	public String getPic_date() {
+	public Timestamp getPic_date() {
 		return pic_date;
 	}
-	public void setPic_date(String pic_date) {
+	public void setPic_date(Timestamp pic_date) {
 		this.pic_date = pic_date;
 	}
 	public String getPic_open() {
@@ -109,6 +109,9 @@ public class Picture {
 	public void setPic_open(String pic_open) {
 		this.pic_open = pic_open;
 	}
+	
+	
+	
 	
 	
 	

@@ -1,6 +1,6 @@
-package picView.album.mapper;
+package picView.picture.mapper;
 
-import picView.album.model.Picture;
+import picView.picture.model.Picture;
 
 public interface PictureMapper {
 	

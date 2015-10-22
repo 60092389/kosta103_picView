@@ -1,4 +1,4 @@
-package picView.album.model;
+package picView.picture.model;
 
 import java.io.InputStream;
 
@@ -7,9 +7,10 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import picView.album.mapper.PictureMapper;
+import picView.album.mapper.AlbumMapper;
 import picView.member.mapper.MemberMapper;
 import picView.member.model.Member;
+import picView.picture.mapper.PictureMapper;
 
 public class PictureDao {
 	

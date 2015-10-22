@@ -130,7 +130,7 @@
 	          	    <button type="submit" class="btn btn-default">Submit</button>
 	        	</form>
 	          </li>
-	          <li><a href="#"><span id="upload"
+	          <li><a href="upload_index.so"><span id="upload"
 							class="glyphicon glyphicon-cloud-upload"></span></a></li>
 	          <li><a class="dropdown active" href="#" data-toggle="dropdown">
 	          	계정<span class="caret"></span></a>

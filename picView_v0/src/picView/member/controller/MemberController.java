@@ -20,6 +20,7 @@ import picView.member.action.ActionForward;
 import picView.member.action.Action;
 import picView.member.action.InsertAction;
 import picView.member.action.loginAction;
+import picView.picture.action.UploadCategoryAction;
 
 @WebServlet("*.so")
 public class MemberController extends HttpServlet {
@@ -80,6 +81,13 @@ public class MemberController extends HttpServlet {
     		
     		forward.setPath("../index/index.jsp");
     		forward.setReDirect(true);
+    	}else if(command.equals("jsp/basic/upload_index.so")){
+    		action = new UploadCategoryAction();
+    		try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
     	}
      
     	if(forward != null){

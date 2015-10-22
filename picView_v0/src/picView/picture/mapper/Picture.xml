@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="picView.picture.mapper.PictureMapper">
+<cache />
+	<insert id="insertPicture" parameterType="Picture">
+		insert into picture(
+		  pic_no, pic_title,mem_no,category_no,tag_name
+		  ,pic_content,pic_count,good_count,pic_add,noti_count,pic_info_1,pic_info_2
+		  ,pic_info_3,pic_date,pic_open
+		)values(
+		  pic_no_seq.NEXTVAL, #{pic_title},#{mem_no},#{category_no},#{tag_name}
+		  ,#{pic_content},0,0,#{pic_add},0,#{pic_info_1},#{pic_info_2}
+		  ,#{pic_info_3},SYSDATE,0
+		)
+		
+	</insert>
+	
+
+</mapper>
