@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="../category/css/main_menu2.css" />
 <link href="../category/css/custom2.css" rel="stylesheet">
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
-<link href="../../jsp/login/css/register.css" rel="stylesheet">
+<link href="../../jsp/login/css/register7.css" rel="stylesheet">
 <link href="../../css/picView_custom.css" rel="stylesheet">
 <title>Insert title here</title>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
