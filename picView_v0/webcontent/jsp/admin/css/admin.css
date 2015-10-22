@@ -68,7 +68,13 @@ table a:HOVER, a:FOCUS {
 }
 
 #report-admin-center {
-	
+	margin-top: 50px;
+	margin-left: 110px;
+}
+
+#report-admin-center table {
+	margin-top: 50px;
+	width: 1100px;
 }
 
 #report-admin-center .report_table .reportlist {
@@ -89,12 +95,20 @@ table a:HOVER, a:FOCUS {
 .tag_table {
 	width: 400px;
 	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.tag_table table {
+	margin-top: 50px;
 }
 
 .tag_graph {
+	margin-top: 20px;
 	width: 800px;
 	float: right;
 	border: 1px solid red;
+	width: 800px;
 }
 
 #tag-admin-center .tag_table .taglist {
@@ -105,17 +119,29 @@ table a:HOVER, a:FOCUS {
 /* category_Admin css */
 /**************************************************************/
 .category-add {
+	margin-left: 70px;
 	margin-top: 20px;
 	width: 500px;
 	float: left;
+	margin-top: 20px;
+}
+
+.category-add table {
+	margin-top: 50px;
 }
 
 .category-manage {
-	margin-top: 20px;
+	margin-top: 50px;
+	margin-right: 50px;
 	width: 700px;
 	float: right;
+	text-align: center;
 }
 
 .button-css {
 	text-align: center;
+}
+
+#add_btn {
+	margin-left: 220px;
 }

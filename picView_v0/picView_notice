@@ -441,3 +441,6 @@ picView.picture.action->InsertAction 수정
 로그인시 내페이지들에 자기정보들 뜨게함
 picView.member.action.loginAction.java 수정
 jsp->myRoom.my_Menu.jsp 수정
+
+2015/10/22 18:12 황재준
+jsp -> admin -> css -> admin.css 수정
