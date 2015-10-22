@@ -451,3 +451,6 @@ jsp -> category -> category.jsp 수정
 2015/10/22 18:51 황재준
 jsp -> myRoom -> my_Show.jsp 수정
 jsp -> myRoom -> css -> my_Show.css 수정 
+
+2015/10/22 18:59 황재준
+jsp -> myRoom -> css -> my_Show.css 삭제 -> my_Show5.css 추가
