@@ -372,3 +372,31 @@ jsp -> admin -> member_Admin.jsp 수정
 jsp -> admin -> ind.html 추가
 =====
 jsp-> login -> index.html 수정
+
+
+2015/10/22 14:24 박준병
+
+로그인, 로그아웃 됨
+로그인시 세션값으로 가지고다니는건 회원번호
+sesion.getAttribute("mem_no");
+
+jsp->layout->header.jsp 수정
+
+jsp->login-> loginForm.jsp, register.jsp 수정
+
+jsp->login-> logout.jsp 추가
+
+picView.member.action 패키지에서
+loginAction.java 수정
+
+picView.member.controller 패키지에서
+MemberController.java 수정
+
+picView.member.mapper 패키지에서
+MemberMapper.java 수정
+Member.xml 수정
+
+picView.member.model 패키지에서
+MemberDao.java 수정
+
+

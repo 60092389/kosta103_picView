@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
+
+import javax.servlet.http.HttpSession;
+
 import picView.cate.action.ListCategoryAction;
 import picView.member.action.ActionForward;
 import picView.member.action.Action;
@@ -67,6 +70,16 @@ public class MemberController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+    	}else if(command.equals("jsp/login/logout.so")){
+    	
+    		HttpSession session = request.getSession();
+    		
+    		session.invalidate();
+    		
+    		forward = new ActionForward();
+    		
+    		forward.setPath("../index/index.jsp");
+    		forward.setReDirect(true);
     	}
      
     	if(forward != null){

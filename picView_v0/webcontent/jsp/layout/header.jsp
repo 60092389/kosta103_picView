@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,7 +15,13 @@
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../css/kfonts2.css" rel="stylesheet">
 <link href="../../css/picView_custom.css" rel="stylesheet">
+<script type="text/javascript">
+	function logout(){
+		alert("로그 아웃 되었습니다.");
+		location.href="../login/logout.jsp";
+	}
 
+</script>
 
 </head>
 <body>
@@ -23,8 +30,13 @@
 		<nav class="navbar navbar-default navbar-fixed-top navnav" role="navigation">
 
 		<div class="container">
-			<%
-		//if(request.getParameter("test").equals("1")){ //비회원일경우-추후수정
+		<%
+			int re = -1;
+			
+			if(session.getAttribute("mem_no")!=null){
+				re=1;
+			}			
+			if(re<0){ //비회원일경우-추후수정
 	  %>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -39,7 +51,7 @@
 			</div>
 
 			<!-- 비회원 -->
-			<!-- <div class="collapse navbar-collapse navbar-ex1-collapse row">
+			<div class="collapse navbar-collapse navbar-ex1-collapse row">
 				<ul class="nav navbar-nav">
 
 					<li><a href="#">모아보기</a></li>
@@ -60,12 +72,14 @@
 					<li><a href="../login/index.html">가입</a></li>
 				</ul>
 
-			</div> -->
+			</div> 
 			<!-- 비회원 끝 -->
 
-			<%-- <%
-		}else if(request.getParameter("test").equals("2")){//회원일경우
-  		%>   --%>
+		<% 
+			}else if(re>0){//회원일경우
+		%>
+		
+		
 	      <div class="navbar-header">
 	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 	          <span class="sr-only">Toggle navigation</span>
@@ -73,7 +87,9 @@
 	          <span class="icon-bar"></span>
 	          <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="#"> </a>
+	        <div id="logo">
+					<a href="../myRoom/my_Show.jsp"><img id="logo" src="../../images/logo.jpg"></a>
+				</div>
 	      </div>
 
 			<!-- 회원메뉴 시작 -->
@@ -122,15 +138,16 @@
 	          		<li><a href="../account/message.jsp">쪽지함</a></li>
 	          		<li><a href="#">상세 도움말</a></li>
 	          		<li><a href="../account/accountSet.jsp">계정 설정</a></li>
+	          		<li><a onclick="logout()">로그아웃</a></li>
 	          	</ul>
 	          </li>
 	        </ul>
 	        
 	      </div>
 	      <!-- 회원메뉴 끝 -->
-<%-- 	      <%
+		<% 
 			}
-	      %>  --%>
+		%>
 		</div>
 
 		</nav>

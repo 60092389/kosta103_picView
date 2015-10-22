@@ -22,16 +22,29 @@ public class loginAction implements Action {
 		member.setMem_pwd(pass);
 		
 		MemberDao dao = MemberDao.getInstance();
-		int re = dao.loginMember(member);
+		Member member2 = dao.loginMember(member);
+		
+		int re = 0;
+		
+		
+		
 		HttpSession session = request.getSession();
 		ActionForward forward = new ActionForward();
+		
+		if(member2 != null){
+			re = 1;
+		}else if(member2 == null){
+			re = -1;
+		}
+
 		if(re>0){
 			
-			session.setAttribute("id", member.getMem_id());
+			session.setAttribute("mem_no", member2.getMem_no());
+			//int ok = Integer.parseInt((String) session.getAttribute("mem_no"));
 			forward.setPath("../myRoom/mypage.jsp");
 			forward.setReDirect(true);
 		}else{
-			forward.setPath("loginForm.jsp");
+			forward.setPath("../login/loginForm.jsp");
 			forward.setReDirect(true);
 		}
 

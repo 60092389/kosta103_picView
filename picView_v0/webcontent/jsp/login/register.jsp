@@ -64,7 +64,7 @@
 	<div class="register">
 	<h1>가입하기</h1><br><br>
 	</div>
-	<form class="form-horizontal" action="insertAction.do" method="post">
+	<form class="form-horizontal" action="insertAction.so" method="post">
 	<div class="contents">
 	
 	   <!-- 가입폼 -->

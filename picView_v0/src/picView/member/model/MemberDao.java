@@ -53,22 +53,11 @@ public class MemberDao implements Serializable {
 		}
 		return re;
 	}
-	public int loginMember(Member member){
+	public Member loginMember(Member member){
 		SqlSession sqlSession = getSessionFactory().openSession();
-		int re = -1;
-		try {
-			re = sqlSession.getMapper(MemberMapper.class).loginMember(member);
-			if(re==1){
-				sqlSession.commit();
-			}else{
-				sqlSession.rollback();
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally{
-			sqlSession.close();
-		}
-		return re;
+
+		return sqlSession.getMapper(MemberMapper.class).loginMember(member);
+		
 	}
 	public List<Member> listMember(int requestPage, Search search){
 		SqlSession sqlSession = getSessionFactory().openSession();

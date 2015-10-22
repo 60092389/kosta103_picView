@@ -23,7 +23,7 @@
 			alert('비밀번호를 입력하세요');
 			o.pass.focus();
 		}else{
-			o.action="loginForm.do";
+			o.action="loginForm.so";
 			o.submit();
 		}
 	}
@@ -37,7 +37,7 @@
 
 	<div class="center contents">
 		<div class="login">
-			<form action="loginForm.do" role="form" name="loginForm">
+			<form action="loginForm.so" role="form" name="loginForm">
 				<div id="id" class="input-group col-xs-3 col-md-3 col-lg-3">
 					<span class="input-group-addon"> <span
 						class="glyphicon glyphicon-user"> </span>
