@@ -62,14 +62,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1060px;
+    border:0px solid red;
+    display : flex;
 }
 
 
 .sub-photo-left-view {
-    float: left;
     margin-bottom: 120px;
     margin-right: 60px;
     width: 500px;
+    border:0px solid blue;
+    float:left;
 }
 .attribution-view.photo-attribution > .avatar {
     float: left;
@@ -326,6 +329,7 @@ body {
     margin-left: 18px;
 }
 .sub-photo-view > .sub-photo-container {
+    background: #f3f5f6 none repeat scroll 0 0;
     color: #212124;
 }
 
@@ -459,6 +463,12 @@ body {
     height: 32px;
     width: 32px;
 }
+.sub-photo-comments-view {
+    border-top: 1px solid transparent;
+    clear: both;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
 .sub-photo-comments-view .comment-icon img {
     display: block;
 }
@@ -526,10 +536,11 @@ img {
 }
 
 .sub-photo-right-view {
-    float: left;
     margin-bottom: 120px;
     margin-top: 1em;
     width: 500px;
+    border: 0px solid green;
+    float: right;
 }
 
 .sub-photo-right-view > .sub-photo-right-row1 > .sub-photo-right-stats-view {
@@ -744,6 +755,11 @@ img {
 .sub-photo-tags-tag-view > .autotags-helper, .photo-tags-autotags-view > .autotags-helper {
     cursor: pointer;
     margin-left: 5px;
+}
+.sub-photo-view {
+    background: #f3f5f6 none repeat scroll 0 0;
+    color: #212124;
+    height: 100%;
 }
 
 .sub-photo-tags-tag-view > .autotags-helper > i.autotags-helper-icon, .photo-tags-autotags-view > .autotags-helper > i.autotags-helper-icon {
