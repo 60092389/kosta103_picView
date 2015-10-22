@@ -426,6 +426,6 @@ picView.picture.model
 jsp-> basic->upload_index.jsp 추가 (처음에 이곳에서 실행)
 jsp-> basic-> upload.jsp 추가
 jsp-> basic->js-> 파일업로드하는 js파일 11개 추가
-jsp-> css->style.css, blueimp-gallery.min.css, jquery.fileupload.css 추가
+jsp-> basic->css->style.css, blueimp-gallery.min.css, jquery.fileupload.css 추가
  
 jsp->layout->header.jsp 수정
