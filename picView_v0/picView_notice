@@ -431,3 +431,4 @@ jsp-> basic->css->style.css, blueimp-gallery.min.css, jquery.fileupload.css 추�
 jsp->layout->header.jsp 수정
 사진 테이블 저장시 시퀀스 추가 
 create sequence pic_no_seq 추가하기
+jsp->basic->js->vender 파일 추가
