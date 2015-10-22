@@ -427,7 +427,8 @@ jsp-> basic->upload_index.jsp 추가 (처음에 이곳에서 실행)
 jsp-> basic-> upload.jsp 추가
 jsp-> basic->js-> 파일업로드하는 js파일 11개 추가
 jsp-> basic->css->style.css, blueimp-gallery.min.css, jquery.fileupload.css 추가
- 
+
+
 jsp->layout->header.jsp 수정
 사진 테이블 저장시 시퀀스 추가 
 create sequence pic_no_seq 추가하기
@@ -436,3 +437,5 @@ jsp->basic->js->vender 파일 추가
 2015.10.22 16:25 최영혜
 jsp->layout->header.jsp 2차 파일 수정
 picView.picture.action->InsertAction 수정
+
+mybitis-config.xml 파일 수정...
