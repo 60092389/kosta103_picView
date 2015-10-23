@@ -12,18 +12,18 @@
 
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../css/picView_custom.css" rel="stylesheet">
-<link href="../../jsp/login/css/loginForm.css" rel="stylesheet">
+<link href="css/loginForm_2.css" rel="stylesheet">
 <script type="text/javascript">
-	function login_check(){
+	function login_check() {
 		var o = document.loginForm;
-		if(!o.id.value){
+		if (!o.id.value) {
 			alert('아이디를 입력하세요');
 			o.id.focus();
-		}else if(!o.pass.value){
+		} else if (!o.pass.value) {
 			alert('비밀번호를 입력하세요');
 			o.pass.focus();
-		}else{
-			o.action="loginForm.so";
+		} else {
+			o.action = "loginForm.so";
 			o.submit();
 		}
 	}
@@ -35,25 +35,28 @@
 		<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
 
-	<div class="center contents">
+	<div class="contents">
 		<div class="login">
-			<form action="loginForm.so" role="form" name="loginForm">
-				<div id="id" class="input-group col-xs-3 col-md-3 col-lg-3">
+			<form class="form-horizontal" action="loginForm.so" name="loginForm">
+
+
+				<div id="id" class="input-group">
 					<span class="input-group-addon"> <span
 						class="glyphicon glyphicon-user"> </span>
-					</span> <input class="form-control" name="id" type="text" placeholder="아이디">
+					</span> <input class="form-control" name="id" type="text"
+						placeholder="아이디">
 
 				</div>
-				<br> <br>
-				<div id="pass" class="input-group col-xs-3 col-md-3 col-lg-3">
+				<div id="pass" class="input-group">
 					<span class="input-group-addon"> <span
 						class="glyphicon glyphicon-lock"></span>
-					</span> <input class="form-control" name="pass" type="password" placeholder="비밀번호">
+					</span> <input class="form-control" name="pass" type="password"
+						placeholder="비밀번호">
 
 				</div>
-				<br> <br>
 				<div class="button">
-					<input id="login" class="btn btn-primary" type="button" onclick="login_check();" value="로그인">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input id="login" class="btn btn-primary" type="button"
+						onclick="login_check();" value="로그인">&nbsp;&nbsp;&nbsp;&nbsp;
 					<input id="join" class="btn btn-primary" type="button" value="회원가입">
 				</div>
 			</form>

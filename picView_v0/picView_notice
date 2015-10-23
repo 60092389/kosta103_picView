@@ -457,3 +457,12 @@ jsp -> myRoom -> css -> my_Show.css 삭제 -> my_Show5.css 추가
 
 2015/10/22 19:26 최영혜
 jsp->basic->css->picDetail.css 수정
+
+2015/10/23 09:39 황재준
+jsp -> login -> loginForm.jsp 로그인창 수정
+jsp -> login -> css -> loginForm_2.css 	** css 이름 바뀜
+
+jsp -> basic -> upload(prev).jsp	** 혹시 몰라서 전 upload를 prev로 이름 바꿔놓음
+
+jsp -> basic -> upload.jsp
+jsp -> basic -> css -> upload2.css	업로드 수정
