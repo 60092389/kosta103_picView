@@ -23,7 +23,7 @@
 		$('.info_bar').css('display', 'none');
 
 		$('.picture_list').mouseover(function() {
-			$('.info_bar').css('display', 'block');
+			$(this).find('div').css('display', 'block');
 		});
 		$('.picture_list').mouseout(function() {
 			$('.info_bar').css('display', 'none');
