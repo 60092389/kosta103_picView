@@ -9,5 +9,7 @@ public interface PictureMapper {
 	
 	public int insertPicture(Picture picture);
 	public List<PictureShow> listMyShow(int mem_no);
+	public List<Picture> ManageListPicture(int mem_no);
+	public List<Picture> PictureDate(int mem_no);
 
 }

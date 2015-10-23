@@ -50,7 +50,7 @@ public class loginAction implements Action {
 			session.setAttribute("pic_count", member2.getPic_count());
 			session.setAttribute("mem_date", member2.getMem_date());
 			//int ok = Integer.parseInt((String) session.getAttribute("mem_no"));
-			forward.setPath("../myRoom/my_Manage.jsp");
+			forward.setPath("../myRoom/my_Manage.html");
 			forward.setReDirect(true);
 		}else{
 			forward.setPath("../login/loginForm.jsp");

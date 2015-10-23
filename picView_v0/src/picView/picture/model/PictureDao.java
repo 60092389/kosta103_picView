@@ -52,6 +52,7 @@ public class PictureDao {
 		}
 		return re;
 	}
+	//my_Show.jsp에 사용되는 리스트
 	public List<PictureShow> listMyShow(int mem_no){
 		SqlSession sqlSession = getSessionFactory().openSession();
 		
@@ -64,5 +65,17 @@ public class PictureDao {
 			sqlSession.close();
 		}
 	}
-
+	
+	//my_Manage.jsp에 사용되는 리스트
+	public List<Picture> ManageListPicture(int mem_no){
+		SqlSession sqlSession = getSessionFactory().openSession();
+		
+		return sqlSession.getMapper(PictureMapper.class).ManageListPicture(mem_no);
+	}
+	//my_Manage.jsp에 사용되는 날짜뽑는 리스트
+	public List<Picture> PictureDate(int mem_no){
+		SqlSession sqlSession = getSessionFactory().openSession();
+		
+		return sqlSession.getMapper(PictureMapper.class).PictureDate(mem_no);
+	}
 }

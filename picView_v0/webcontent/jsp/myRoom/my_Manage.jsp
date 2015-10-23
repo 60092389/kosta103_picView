@@ -1,8 +1,47 @@
+<%@page import="picView.picture.model.Picture"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+<%
+	System.out.println("리스트값 : "+request.getAttribute("list"));
+
+	List<Picture> list = (List)request.getAttribute("list");
+	
+	/* for(int i=0; i<list.size(); i++){
+		System.out.println(list.get(i).getPic_date());
+	} */
+	
+	
+/* 	for(int i=0; i<list.size(); i++){
+		if(list.get(i+1).getPic_title() == null){
+			break;
+		}
+		if(list.get(i).getPic_date() == list.get(i+1).getPic_date()){
+			System.out.println("같은값");
+		}else if(list.get(i).getPic_date() != list.get(i+1).getPic_date()){
+			System.out.println(list.get(i).getPic_date());
+		}
+	} */
+	
+/* 	for(int i=0; i<list.size(); i++){
+		if(list.get(i+1).getPic_title() == null){
+			break;
+		}
+		for(int j=i+1; j<list.size(); j++){
+			if(list.get(i).getPic_title().equals(list.get(j).getPic_title())){
+				System.out.println(list.get(i).getPic_title());
+			}
+		}
+	} */
+	
+	
+%>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,6 +79,10 @@
 		position: fixed;
 	}
 	
+	.center_picture{
+		display: inline-block;
+	}
+	
 </style>
 <title>My_Manage</title>
 </head>
@@ -53,8 +96,8 @@
 	
 	<div id="myMenu_navi">
 		<ul class="nav nav-pills">
-			<li class="menu active"><a href="my_Manage.jsp">사진 관리</a></li>
-			<li class="menu"><a href="my_Show.jsp">보여 주기</a></li>
+			<li class="menu active"><a href="my_Manage.html">사진 관리</a></li>
+			<li class="menu"><a href="my_Show.html">보여 주기</a></li>
 			<li class="menu"><a href="#">사진첩</a></li>
 			<li class="menu"><a href="#">관심 사진</a></li>
 			<li class="menu"><a href="follow.jsp">친구 목록</a></li>
@@ -75,47 +118,34 @@
 		
 		<div class="center_left" id="myScrollspy">
 			<!-- 날짜별 사진보기  foreach 써서 날짜 넣기-->
- 				 <ul class="nav nav-pills nav-stacked">
-  					  <li><a href="#section1">2015/04/21</a></li>
-  					  <li><a href="#section2">2015/04/20</a></li>
-  					  <li><a href="#section3">2015/04/19</a></li>
-  				</ul>
+ 				<ul class="nav nav-pills nav-stacked">
+  			 	<c:forEach var="a" items="${date }">
+  					<li><a href="#<fmt:formatDate value="${a.pic_date }" pattern="yyyy-MM-dd"/>">
+  						<fmt:formatDate value="${a.pic_date }" pattern="yyyy-MM-dd"/>
+  					</a></li>
+  				</c:forEach>
+  			</ul>
 		</div>
 		
 		<div class="center_main">
 			 <!-- foreach 써서 날짜 앨범 넣기 -->
-			  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-			 <div class="center_wrap" id="section1">
-			 	<div class="center_date">
-			 		2015/04/21
+			  <br> <br>
+		
+			 <c:forEach var="d" items="${date }">
+			 	<div class="center_wrap" id="<fmt:formatDate value="${d.pic_date }" pattern="yyyy-MM-dd"/>">
+			 			<div class="center_date">
+			 				<h3><fmt:formatDate value="${d.pic_date }" pattern="yyyy-MM-dd"/></h3>
+			 			</div>
+				
+			 	<c:forEach var="l" items="${list }">
+			 		<c:if test="${d.pic_date == l.pic_date }">				
+			 			<div class="center_picture" >
+			 				<img src="../../upload/${l.pic_add }" />
+			 			</div>
+			 		</c:if>	
+			 	</c:forEach>
 			 	</div>
-			 	<div class="center_picture" >
-			 		<img src="../../images/logo.jpg"/>
-			 		<img src="../../images/logo.jpg"/>
-			 	</div>
-			 </div>
-			 <br> <br> <br> <br> <br>
-			 <div class="center_wrap" id="section2">
-			 	<div class="center_date">
-			 		2015/04/20
-			 	</div>
-			 	<div class="center_picture" >
-			 		<img src="../../images/Desert.jpg" />
-			 	</div>
-			 </div>
-			  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-			   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-			    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-			 <div class="center_wrap" id="section3">
-			 	<div class="center_date">
-			 		2015/04/19
-			 	</div>
-			 	<div class="center_picture" >
-			 		<img src="../../images/Desert.jpg" />
-			 		<img src="../../images/Desert.jpg" />
-			 	</div>
-			 </div>
-		</div>
+			 </c:forEach>		
 	</div>	
 		
 	

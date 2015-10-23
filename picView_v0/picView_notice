@@ -488,3 +488,26 @@ jsp -> myRoom -> my_Show.jsp 수정
 1. jsp -> myRoom -> my_Show.jsp 수정
 2. picture.mapper -> picture.xml 수정
 3. picture.model -> pictureShow.java 수정
+
+
+2015/10/23 17:18
+jsp->myRoom 폴더안에
+
+my_Manage.html 추가 외에 myRoom폴더안 모든 jsp파일의 메뉴바수정
+
+picView.picture.model
+PictureDao.java 수정
+
+picView.picture.mapper
+PictureMapper.java 수정
+picture.xml 수정
+
+picView.picture.controller
+PictureController.java 수정
+
+picView.picture.action
+ManageListAction.java 추가
+InsertAction.java 수정(사진업로드 후 포워드 페이지)
+
+picView.member.action
+loginAction.java 수정(로그인후 포워드 페이지)

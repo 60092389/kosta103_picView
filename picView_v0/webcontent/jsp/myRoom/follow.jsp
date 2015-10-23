@@ -38,8 +38,8 @@
 	
 	<div id="myMenu_navi">
 		<ul class="nav nav-pills">
-			<li class="menu"><a href="my_Manage.jsp">사진 관리</a></li>
-			<li class="menu"><a href="my_Show.jsp">보여 주기</a></li>
+			<li class="menu"><a href="my_Manage.html">사진 관리</a></li>
+			<li class="menu"><a href="my_Show.html">보여 주기</a></li>
 			<li class="menu"><a href="#">사진첩</a></li>
 			<li class="menu"><a href="#">관심 사진</a></li>
 			<li class="menu active"><a href="follow.jsp">친구 목록</a></li>

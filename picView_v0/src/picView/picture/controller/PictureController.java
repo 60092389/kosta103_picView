@@ -13,6 +13,7 @@ import picView.picture.action.Action;
 import picView.picture.action.ActionForward;
 import picView.picture.action.InsertAction;
 import picView.picture.action.ListMyShowAction;
+import picView.picture.action.ManageListAction;
 
 
 @WebServlet("*.po")
@@ -56,7 +57,18 @@ public class PictureController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-    	}
+    	}else if(command.equals("jsp/myRoom/ManageAction.po")){
+    		
+    		action = new ManageListAction();
+    		try {
+    			forward = action.execute(request, response);			
+    			
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}    	
+    	
+    	
     	if(forward != null){
     		if(forward.isReDirect()){
     			response.sendRedirect(forward.getPath());
