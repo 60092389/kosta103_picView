@@ -6,6 +6,8 @@
 
 .center {
 	background-image: url(../../../images/main/main_4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 1000px;
 	margin-top: -35px;
 	margin-bottom: -2px;

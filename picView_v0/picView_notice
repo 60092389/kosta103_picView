@@ -490,7 +490,7 @@ jsp -> myRoom -> my_Show.jsp 수정
 3. picture.model -> pictureShow.java 수정
 
 
-2015/10/23 17:18
+2015/10/23 17:18 박준병
 jsp->myRoom 폴더안에
 
 my_Manage.html 추가 외에 myRoom폴더안 모든 jsp파일의 메뉴바수정
@@ -511,3 +511,7 @@ InsertAction.java 수정(사진업로드 후 포워드 페이지)
 
 picView.member.action
 loginAction.java 수정(로그인후 포워드 페이지)
+
+2015/10/23 17:39 황재준
+jsp -> login -> css -> register7.css
+회원가입 폼 배경 css 수정
