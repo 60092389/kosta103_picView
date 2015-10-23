@@ -18,7 +18,7 @@ $(function () {
 		            },
 		            complete : function(data){
 		            	alert('업로드 되었습니다');
-		            	location.href='../myRoom/my_Show.jsp';
+		            	location.href='../myRoom/my_Show.html';
 		            }
 		        });
 		    	

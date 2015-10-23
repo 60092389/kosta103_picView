@@ -98,8 +98,8 @@
 	          <li><a class="dropdown active" href="#" data-toggle="dropdown">
 	          		내공간<span class="caret"></span></a>
 	          	<ul class="dropdown-menu" role="menu">
-	          		<li><a href="#">내사진 관리</a></li>
-	          		<li><a href="../myRoom/my_Show.jsp">보여주기</a></li>
+	          		<li><a href="../myRoom/my_Manage.html">내사진 관리</a></li>
+	          		<li><a href="../myRoom/my_Show.html">보여주기</a></li>
 	          		<li><a href="#">앨범</a></li>
 	          		<li><a href="#">좋아하는 사진</a></li>
 	          		<li><a href="../myRoom/follow.jsp">친구목록</a></li>

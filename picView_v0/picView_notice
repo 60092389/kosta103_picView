@@ -515,3 +515,13 @@ loginAction.java 수정(로그인후 포워드 페이지)
 2015/10/23 17:39 황재준
 jsp -> login -> css -> register7.css
 회원가입 폼 배경 css 수정
+
+2015/10/23 17:43 박준병
+jsp->basic->js
+main.js 수정
+
+jsp->myRoom->my_Show.jsp 수정
+jsp->myRoom->my_Manage.jsp 수정
+
+jsp->layout->header.jsp 수정
+
