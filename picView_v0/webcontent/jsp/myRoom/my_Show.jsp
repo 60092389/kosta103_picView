@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -18,6 +21,7 @@
 <script type="text/javascript">
 	$(function() {
 		$('.info_bar').css('display', 'none');
+
 		$('.picture_list').mouseover(function() {
 			$('.info_bar').css('display', 'block');
 		});
@@ -72,61 +76,21 @@
 		<!-- 공개 보기 -->
 		<div class="open_pic">
 			<div id="picture_area">
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_1.JPG');">
-
-					<div class="info_bar">
-						<a class="pic_title" href="#" data-rapid_p="64">A ride with
-							Charon</a><a class="pic_date" href="#" data-rapid_p="65"> 2015년
-							10월 20일 </a>
+				<c:forEach var="s" items="${listShow}">
+					<div class="picture_list" style="background-image: url('../../upload/${s.pic_add}');" id="${s.pic_add}">
+						<div class="info_bar" id="${s.pic_add}">
+							<a class="pic_title" href="#" data-rapid_p="64" id="${s.pic_add}">${s.pic_title}</a>
+							<a class="pic_date" href="#" data-rapid_p="65" id="${s.pic_add}"><fmt:formatDate value="${s.pic_date}" pattern="yyyy-MM-dd"/></a>
+						</div>
 					</div>
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_2.JPG');">
-
-					<div class="info_bar">
-						<a class="pic_title" href="#" data-rapid_p="64">A ride with
-							Charon</a> <a class="pic_date" href="#" data-rapid_p="65"> 2015년
-							10월 21일 </a>
-					</div>
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_3.JPG');">
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_4.JPG');">
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_5.JPG');">
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_6.jpg');">
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_7.jpg');">
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_8.jpg');">
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_9.jpg');">
-
-				</div>
-				<div class="picture_list"
-					style="background-image: url('../../images/animal_plant/ani_plan_10.jpg');">
-
-				</div>
+				</c:forEach>
 			</div>
+
 		</div>
 
+
 		<!-- 비공개 보기 -->
+
 		<div class="close_pic"></div>
 
 		<!-- 친구 보기 -->

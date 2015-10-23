@@ -12,6 +12,7 @@
 		<typeAlias type="picView.blacklist.model.BlackList" alias="BlackList"/>
 		<typeAlias type="picView.blacklist.model.BlackResult" alias="BlackResult"/>
 		<typeAlias type="picView.picture.model.Picture" alias="Picture"/>
+		<typeAlias type="picView.picture.model.PictureShow" alias="PictureShow"/>
 	</typeAliases>
 	
 	<environments default="development">

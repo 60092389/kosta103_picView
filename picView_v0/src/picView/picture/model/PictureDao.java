@@ -1,12 +1,15 @@
 package picView.picture.model;
 
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+import picView.admin.mapper.AdminMapper;
 import picView.album.mapper.AlbumMapper;
 import picView.member.mapper.MemberMapper;
 import picView.member.model.Member;
@@ -48,6 +51,18 @@ public class PictureDao {
 			sqlSession.close();
 		}
 		return re;
+	}
+	public List<PictureShow> listMyShow(int mem_no){
+		SqlSession sqlSession = getSessionFactory().openSession();
+		
+		try {
+			return sqlSession.getMapper(PictureMapper.class).listMyShow(mem_no);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}finally{
+			sqlSession.close();
+		}
 	}
 
 }
