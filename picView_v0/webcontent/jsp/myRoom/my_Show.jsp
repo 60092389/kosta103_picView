@@ -30,6 +30,18 @@
 		});
 
 	});
+	
+	$(function(){
+		$('.picture_list').click(function(){
+			var id = $(this).find('input').attr("value");
+			location.href = "../../jsp/basic/picDetail.jsp?pic_no=" + id;
+			
+		});
+		$('#picture_area').mouseover(function(){
+	         $(this).css('cursor', 'pointer');
+	      });
+	});
+	
 </script>
 <body>
 
@@ -75,14 +87,16 @@
 
 		<!-- 공개 보기 -->
 		<div class="open_pic">
-			<div id="picture_area">
+		<div id="picture_area">
 				<c:forEach var="s" items="${listShow}">
 					<div class="picture_list" style="background-image: url('../../upload/${s.pic_add}');" id="${s.pic_add}">
+						<input type="hidden" value="${s.pic_no}">
 						<div class="info_bar" id="${s.pic_add}">
-							<a class="pic_title" href="#" data-rapid_p="64" id="${s.pic_add}">${s.pic_title}</a>
-							<a class="pic_date" href="#" data-rapid_p="65" id="${s.pic_add}"><fmt:formatDate value="${s.pic_date}" pattern="yyyy-MM-dd"/></a>
+							<a class="pic_title" href="#">${s.pic_title}</a>
+							<a class="pic_date" href="#"><fmt:formatDate value="${s.pic_date}" pattern="yyyy-MM-dd"/></a>
 						</div>
 					</div>
+					
 				</c:forEach>
 			</div>
 

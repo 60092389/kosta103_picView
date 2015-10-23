@@ -483,3 +483,8 @@ jsp -> myRoom -> index.html 추가
 
 2015/10/23 11:48 홍채영
 jsp -> myRoom -> my_Show.jsp 수정
+
+2015/10/23 15:39 홍채영
+1. jsp -> myRoom -> my_Show.jsp 수정
+2. picture.mapper -> picture.xml 수정
+3. picture.model -> pictureShow.java 수정

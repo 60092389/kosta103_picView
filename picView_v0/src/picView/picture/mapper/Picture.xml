@@ -18,7 +18,7 @@
 	</insert>
 	
 	<select id="listMyShow" resultType="PictureShow" parameterType="int">
-		select pic_title, pic_date, pic_add
+		select pic_no, pic_title, pic_date, pic_add
 		from picture
 		where mem_no = #{mem_no}
 	</select>
