@@ -11,6 +11,7 @@
 <title>보여주기</title>
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
+<script src="js/my_Show.js"></script>
 
 <link href="css/my_Show5.css" rel="stylesheet">
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
@@ -18,31 +19,7 @@
 <link href="../../jsp/myRoom/css/my_Menu.css" rel="stylesheet">
 <link href="../../jsp/myRoom/css/my_Popular_Good.css" rel="stylesheet">
 </head>
-<script type="text/javascript">
-	$(function() {
-		$('.info_bar').css('display', 'none');
 
-		$('.picture_list').mouseover(function() {
-			$(this).find('div').css('display', 'block');
-		});
-		$('.picture_list').mouseout(function() {
-			$('.info_bar').css('display', 'none');
-		});
-
-	});
-	
-	$(function(){
-		$('.picture_list').click(function(){
-			var id = $(this).find('input').attr("value");
-			location.href = "../../jsp/basic/picDetail.jsp?pic_no=" + id;
-			
-		});
-		$('#picture_area').mouseover(function(){
-	         $(this).css('cursor', 'pointer');
-	      });
-	});
-	
-</script>
 <body>
 
 	<div class="header">

@@ -2,6 +2,7 @@
     <wb-module deploy-name="picView_v0">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/backup_151025"/>
         <property name="context-root" value="picView_v0"/>
         <property name="java-output-path" value="/picView_v0/build/classes"/>
     </wb-module>

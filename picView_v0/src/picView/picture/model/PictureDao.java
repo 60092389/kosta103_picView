@@ -78,4 +78,22 @@ public class PictureDao {
 		
 		return sqlSession.getMapper(PictureMapper.class).PictureDate(mem_no);
 	}
+	
+	public int deletePicture(int pic_no){
+		SqlSession sqlSession = getSessionFactory().openSession();
+		int re = -1;
+		try {
+			re = sqlSession.getMapper(PictureMapper.class).deletePicture(pic_no);
+			if(re > 0){
+				sqlSession.commit();
+			}else{
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			sqlSession.close();
+		}
+		return re;
+	}
 }

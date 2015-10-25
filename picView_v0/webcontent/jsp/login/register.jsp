@@ -140,12 +140,12 @@
 	   		<c:forEach var="category" items="${cate_list}">
 	   		
 	   			<div class="col-sm-4 col-md-4">
-			       <div class="Interest Module FollowButton">
-				       <div class="wholeInterestMask hidden">
+			      <div class="Interest Module FollowButton">
+				     <div class="wholeInterestMask hidden">
 							<div class="check"> </div>
 							<div class="mask"> </div>
 					   </div>
-				       <div class="interestWrapper" style="background-color: #403F14">
+				     <div class="interestWrapper" style="background-color: #403F14">
 				       		<div class="interestImage" style="background-image: url('../../upload/${category.category_img_add}')"></div>
 				       		
 					       		<div class="interestLabel">
@@ -153,8 +153,8 @@
 									<input type="checkbox" name="category_no" id="category_no" value="${category.category_no }" />
 								</h4>
 							</div>
-				       </div>
-			       </div>
+				     </div>
+			      </div>
 	     		</div>
 	   		</c:forEach>
 	  

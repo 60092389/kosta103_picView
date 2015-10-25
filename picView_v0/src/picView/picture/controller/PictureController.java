@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import picView.picture.action.Action;
 import picView.picture.action.ActionForward;
+import picView.picture.action.DeleteAction;
 import picView.picture.action.InsertAction;
 import picView.picture.action.ListMyShowAction;
 import picView.picture.action.ManageListAction;
@@ -57,7 +58,7 @@ public class PictureController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-    	}else if(command.equals("jsp/myRoom/ManageAction.po")){
+    	}else if(command.equals("jsp/myRoom/manageAction.po")){
     		
     		action = new ManageListAction();
     		try {
@@ -66,8 +67,14 @@ public class PictureController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+    	}else if(command.equals("jsp/myRoom/deletePicture.po")){
+    		action = new DeleteAction();
+    		try{
+    			forward = action.execute(request, response);
+    		}catch(Exception e){
+    			e.printStackTrace();
+    		}
     	}    	
-    	
     	
     	if(forward != null){
     		if(forward.isReDirect()){

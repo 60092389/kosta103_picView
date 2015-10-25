@@ -10,7 +10,7 @@
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../jsp/basic/js/jquery.raty.js"></script>
 <script type="text/javascript"
-	src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=bc15ade282ce6f866f0fa259393e946e"></script>
+	src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=63a683902e9d30dc3c7226cb1e57599f"></script>
 
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../jsp/basic/css/ani_plant.css" rel="stylesheet">

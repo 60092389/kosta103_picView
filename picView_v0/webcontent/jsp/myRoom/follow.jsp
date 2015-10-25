@@ -57,13 +57,10 @@
 		
 		
 		<div class="center contents">
-			<div class="image"><img src="..." alt="..." class="img-rounded">회원이미지</div>
 			<h2>회원님이 팔로우하는 사람들</h2>
 			<div class="center_head">
-				<div><input class="btn btn-default" type="button" value="사진에서"></div>
-				<div><input class="btn btn-default" type="button" value="사진의"></div>
-				<div><input class="btn btn-default" type="button" value="목록" ></div>
-				<div><input class="btn btn-default" type="button" value="친구찾기"></div>
+				<div><input class="btn btn-default" type="button" value="친구목록" ></div>
+				<div><input class="btn btn-default" type="button" value="회원찾기"></div>
 			</div>
 			<br><br><br><br><br>
 			<div class="center_table" >

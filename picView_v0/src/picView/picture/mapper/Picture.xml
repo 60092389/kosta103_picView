@@ -21,6 +21,7 @@
 		select pic_no, pic_title, pic_date, pic_add
 		from picture
 		where mem_no = #{mem_no}
+		order by pic_date desc
 	</select>
 	
 	<select id="ManageListPicture" parameterType="int" resultType="Picture">
@@ -37,7 +38,9 @@
 			order by to_date(pic_date, 'yy-mm-dd') desc	
 	</select>
 	
-	
+	<delete id="deletePicture" parameterType="int">
+		delete from picture where pic_no = #{pic_no}
+	</delete>
 	
 	
 

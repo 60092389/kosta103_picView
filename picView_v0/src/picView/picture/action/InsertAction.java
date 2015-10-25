@@ -85,7 +85,7 @@ public class InsertAction implements Action{
 	        
 	        int re = dao.insertPicture(picture);
 			ActionForward forward = new ActionForward();
-	        forward.setPath("jsp/myRoom/my_Show.html");
+	        forward.setPath("jsp/myRoom/my_Manage.html");
 	        forward.setReDirect(false);
 			return forward;
 	}

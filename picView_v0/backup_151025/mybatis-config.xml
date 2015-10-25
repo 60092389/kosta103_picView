@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="picView.member.model.Member" alias="Member"/>
+		<typeAlias type="picView.cate.model.Category" alias="Category"/>
+		<typeAlias type="picView.cate.model.Search" alias="Search"/>
+		 <typeAlias type="picView.blacklist.model.BlackSearch" alias="BlackSearch"/>
+		<typeAlias type="picView.blacklist.model.BlackList" alias="BlackList"/>
+		<typeAlias type="picView.blacklist.model.BlackResult" alias="BlackResult"/>
+		<typeAlias type="picView.picture.model.Picture" alias="Picture"/>
+		<typeAlias type="picView.picture.model.PictureShow" alias="PictureShow"/>
+	</typeAliases>
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<dataSource type="JNDI">
+				<property name="data_source" value="java:comp/env/jdbc/oracle"/>
+			</dataSource>
+		</environment>		
+	</environments>
+	
+	<mappers>
+		<mapper resource="picView/member/mapper/Member.xml"/>
+		<mapper resource="picView/cate/mapper/Category.xml"/>
+		<mapper resource="picView/admin/mapper/MemberList.xml" />
+		<mapper resource="picView/blacklist/mapper/Black.xml"/>
+		<mapper resource="picView/picture/mapper/Picture.xml"/>
+	</mappers>
+	
+</configuration>

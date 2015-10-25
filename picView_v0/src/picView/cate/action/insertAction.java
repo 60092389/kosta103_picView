@@ -74,10 +74,10 @@ public class insertAction implements Action {
 		
 		if(re == 1){
 			forward.setReDirect(true);
-			forward.setPath("index.html");
+			forward.setPath("category_Admin.html");
 		}else{
 			forward.setReDirect(true);
-			forward.setPath("index.html");
+			forward.setPath("category_Admin.html");
 		}
 		
 		return forward;

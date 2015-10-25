@@ -51,42 +51,13 @@
 <link href="css/my_Menu.css" rel="stylesheet">
 <link href="../../css/picView_custom.css" rel="stylesheet">
 <link href="../../jsp/myRoom/css/my_Popular_Good.css" rel="stylesheet">
+<link href="../../jsp/myRoom/css/my_Manage.css" rel="stylesheet">
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
-<style type="text/css">
-	.center_left{
-		float:left;
-	}
-	.center_main{
-		padding-left: 300px;	
-	}
-	
-	body{
-		position: relative;
-	}
-	
-	.footer{
-		clear: both;
-	}
-	.center_picture{
-		display: inline-block;
-	}
-	.center_picture img{
-		width: 200px;
-		height: 200px;
-	}
-	.header{
-		position: fixed;
-	}
-	
-	.center_picture{
-		display: inline-block;
-	}
-	
-</style>
+<script src="js/my_Manage.js"></script>
 <title>My_Manage</title>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy">
+<body data-spy="scroll" data-target="#myScrollspy" class="body">
 	<div class="header">
 	<jsp:include page="../layout/header.jsp"></jsp:include>
 	</div>
@@ -134,13 +105,39 @@
 			 <c:forEach var="d" items="${date }">
 			 	<div class="center_wrap" id="<fmt:formatDate value="${d.pic_date }" pattern="yyyy-MM-dd"/>">
 			 			<div class="center_date">
-			 				<h3><fmt:formatDate value="${d.pic_date }" pattern="yyyy-MM-dd"/></h3>
+			 				<p id="date_css"><fmt:formatDate value="${d.pic_date }" pattern="yyyy-MM-dd"/></p>
 			 			</div>
 				
 			 	<c:forEach var="l" items="${list }">
-			 		<c:if test="${d.pic_date == l.pic_date }">				
-			 			<div class="center_picture" >
-			 				<img src="../../upload/${l.pic_add }" />
+			 		<c:if test="${d.pic_date == l.pic_date }">
+	
+			 			<div class="center_picture" style="background-image: url('../../upload/${l.pic_add }');">
+			 				<div class="pic_check"></div>
+			 				<div class="back_color"></div>
+			 				<%-- <img src="../../upload/${l.pic_add }" /> --%>
+			 				<input type="hidden" value="${l.pic_no }">
+			 				<div class="info_top info_hidden" id="${l.pic_add }">
+			 					<a class="pic_detail" href="../../jsp/basic/picDetail.jsp?pic_no=${l.pic_no }"><span class="glyphicon glyphicon-resize-full"></span></a>
+			 				</div>
+			 				<div class="info_bottom" id="${l.pic_add }">
+			 					<div class="dropdown" id="pic_open_scope">
+   								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+   								<ul class="dropdown-menu" role="menu">
+    								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">공개</a></li>
+ 							   		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">친구공개</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">비공개</a></li>
+ 									</ul>
+								</div>
+								<span class="pic_count">${l.pic_count }</span>
+								<div class="dropdown info_hidden" id="pic_manage">
+   								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span></a>
+   								<ul class="dropdown-menu" role="menu">
+    								<li role="presentation"><a role="menuitem" tabindex="-1" href="deletePicture.po?pic_no=${l.pic_no }">사진삭제</a></li>
+ 							   		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">사진수정</a></li>
+ 									</ul>
+								</div>
+			 				</div>
+			 				
 			 			</div>
 			 		</c:if>	
 			 	</c:forEach>

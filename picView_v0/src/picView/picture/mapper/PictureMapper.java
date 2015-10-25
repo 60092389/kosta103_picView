@@ -11,5 +11,6 @@ public interface PictureMapper {
 	public List<PictureShow> listMyShow(int mem_no);
 	public List<Picture> ManageListPicture(int mem_no);
 	public List<Picture> PictureDate(int mem_no);
+	public int deletePicture(int pic_no);
 
 }

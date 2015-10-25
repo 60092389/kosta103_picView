@@ -34,7 +34,7 @@
 			</div>
 			<div id="upload_select" class="row fileupload-buttonbar">
 				<div id="upload_tool">
-					<input type="text" name="mem_no"
+					<input type="hidden" name="mem_no"
 						value="<%=session.getAttribute("mem_no") %>">
 					<!-- The fileinput-button span is used to style the file input field as button -->
 					<span class="btn btn-success fileinput-button"> <i

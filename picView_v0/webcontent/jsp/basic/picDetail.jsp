@@ -8,28 +8,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Insert title here</title>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="js/jssor.slider-20.mini.js"></script>
 <link href="../../css/picView_custom.css" rel="stylesheet">
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="css/picDetail.css" rel="stylesheet">
-<link href="../../css/picView_custom.css" rel="stylesheet">
 <link href="css/pic_slider.css" rel="stylesheet">
-<script type="text/javascript" src="js/pic_slider.js"></script>
+
 
 </head>
 <body>
 	<div class="header">
-	<jsp:include page="../layout/header.jsp"></jsp:include>
-	</div> 
-	
+		<jsp:include page="../layout/header.jsp"></jsp:include>
+	</div>
+
 	<div class="contents">
+	
 	  <div class="view photo-well-scrappy-view">	
 		<div class="height-controller enable-zoom" style="height: 430px;">
-			<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 900px; height: 600px; overflow: hidden; visibility: hidden;"><!--사진 슬라이드  -->
-		        <!-- Loading Screen -->
+			<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 900px; height: 600px; overflow: hidden; visibility: hidden;">사진 슬라이드 
+		        Loading Screen
 		        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
 		            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 		            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
@@ -50,10 +47,10 @@
 		           
 		        </div>
 		        
-		        <!-- Thumbnail Navigator -->
+		        Thumbnail Navigator
 		        <div u="thumbnavigator" class="jssort03" style="position:absolute;left:0px;bottom:0px;width:900px;height:60px;" data-autocenter="1">
 		            <div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=30.0); opacity:0.3;"></div>
-		            <!-- Thumbnail Item Skin Begin -->
+		            Thumbnail Item Skin Begin
 		            <div u="slides" style="cursor: default;">
 		                <div u="prototype" class="p">
 		                    <div class="w">
@@ -62,18 +59,18 @@
 		                    <div class="c"></div>
 		                </div>
 		            </div>
-		            <!-- Thumbnail Item Skin End -->
+		            Thumbnail Item Skin End
 		        </div>
-		        <!-- Arrow Navigator -->
+		        Arrow Navigator
 		        <span data-u="arrowleft" class="jssora02l" style="top:123px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
 		        <span data-u="arrowright" class="jssora02r" style="top:123px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
 		        
 		    </div><!-- 사진 슬라이드 끝 -->
 		</div>
 	  </div>
-	  <div  class="view sub-photo-view"><!--하단정보  -->
+	  <div  class="view sub-photo-view"><!-- 하단정보  -->
 	     <div class="sub-photo-container centered-content">
-	       <div class="view sub-photo-left-view"><!--왼쪽 상세보기 시작  -->
+	       <div class="view sub-photo-left-view"><!-- 왼쪽 상세보기 시작  -->
 	         <div class="view attribution-view clear-float photo-attribution">
 				  <div class="avatar person medium" style="background-image: url(//c2.staticflickr.com/8/7329/buddyicons/51919822@N05_l.jpg?1383412877#51919822@N05);"></div>
 				  <div class="attribution-info">
@@ -154,8 +151,8 @@ Vincent Ting
 			  			</div>
 			  	</div>
 			  </div>
-			</div><!--왼쪽 상세정보보기 끝  -->
-			<div class="view sub-photo-right-view"><!--오른쪽 상세정보 보기  -->
+			</div><!-- 왼쪽 상세정보보기 끝  -->
+			<div class="view sub-photo-right-view"><!-- 오른쪽 상세정보 보기 --> 
 				<div class="sub-photo-right-row1" >
 					<div class="view sub-photo-right-stats-view">
 						<div class="view-count">
@@ -245,11 +242,13 @@ Vincent Ting
 				
 			</div><!-- 오른쪽 상세보기 끝 -->
 		 </div>
-	  </div><!--하단정보끝  -->
+	  </div><!-- 하단정보끝 --> 
 	</div>
 	<div class="footer" class="footer-full-view">
      	<jsp:include page="../layout/footer.jsp"></jsp:include>     	
-    </div>
-    
+  </div>
+
+	<script type="text/javascript" src="js/jssor.slider-20.mini.js"></script>
+	<script type="text/javascript" src="js/pic_slider.js"></script>    
 </body>
 </html>

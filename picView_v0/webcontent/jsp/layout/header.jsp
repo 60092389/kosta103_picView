@@ -88,7 +88,7 @@
 	          <span class="icon-bar"></span>
 	        </button>
 	        <div id="logo">
-					<a href="../myRoom/my_Show.jsp"><img id="logo" src="../../images/logo.jpg"></a>
+					<a href="../myRoom/my_Manage.html"><img id="logo" src="../../images/logo.jpg"></a>
 				</div>
 	      </div>
 
@@ -115,7 +115,7 @@
 	          		둘러보기<span class="caret"></span></a>
 	          	<ul class="dropdown-menu" role="menu">
 	          		<li><a href="../collection/recent_Pic.jsp">최근사진</a></li>
-	          		<li><a href="#">카테고리별</a></li>
+	          		<li><a href="../category/index.html">카테고리별</a></li>
 	          		<li><a href="#">인기사진</a></li>
 	          	</ul>
 	          </li>

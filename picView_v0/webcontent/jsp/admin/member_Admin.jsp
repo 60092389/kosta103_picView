@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="css/admin1.css" rel="stylesheet">
+<link href="css/admin.css" rel="stylesheet">
 <script src="../../js/jquery.min.js"></script>
 <title>회원관리</title>
 <script type="text/javascript">
