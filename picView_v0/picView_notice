@@ -47,3 +47,7 @@ insertAction.java 수정
 2015/10/26 9:53 홍채영
 jsp -> collection -> js 폴더-> recent_Pic.js 추가
 jsp -> colletion -> recent_Pic.jsp 수정
+
+2015/1026 10:12 최영혜
+picView.picture.controller ->picturecotroller 수정
+jsp->layout->header.jsp 수정

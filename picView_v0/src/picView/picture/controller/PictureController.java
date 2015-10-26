@@ -43,9 +43,9 @@ public class PictureController extends HttpServlet {
     	
     	if(command.equals("jsp/basic/fupload.po")){
     		
-    		action = new InsertAction();
+    		InsertAction action2 = new InsertAction();
     		try {
-   				forward = action.execute(request, response);
+   				action2.execute(request, response);
 				
 			} catch (Exception e) {
 				e.printStackTrace();

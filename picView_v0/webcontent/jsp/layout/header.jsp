@@ -54,7 +54,7 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse row">
 				<ul class="nav navbar-nav">
 
-					<li><a href="#">모아보기</a></li>
+					<li><a href="../../jsp/collection/recent_Pic.jsp">모아보기</a></li>
 					<li><a href="#">도움말</a></li>
 					<li style="width: 360px">&nbsp;</li>
 
