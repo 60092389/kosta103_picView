@@ -42,3 +42,8 @@ PictureDao.java 수정
 
 picView.cate.action
 insertAction.java 수정
+
+================2015-10-26
+2015/10/26 9:53 홍채영
+jsp -> collection -> js 폴더-> recent_Pic.js 추가
+jsp -> colletion -> recent_Pic.jsp 수정

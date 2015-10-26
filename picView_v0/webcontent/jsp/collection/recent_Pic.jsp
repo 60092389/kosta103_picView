@@ -9,21 +9,11 @@
 <link href="../../css/picView_custom.css" rel="stylesheet">
 <title>Insert title here</title>
 <script src="../../js/jquery.min.js"></script>
-<script type="text/javascript">
-	$(function(){
-		$('.interaction-bar').css('display','none');
-		$('.photo-list-photo-view').mouseover(function(){
-				$('.photo-list-photo-interaction .interaction-bar').css('display','flex');
-			});
-		$('.photo-list-photo-view').mouseout(function(){
-			$('.interaction-bar').css('display','none');
-		});
-			
-		});
+<script src="js/recent_Pic.js"></script>
 
-</script>
 </head>
 <body>
+
     <div id="content">
     	<div>
 			<div class="header">
