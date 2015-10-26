@@ -42,7 +42,7 @@
 					
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Slide 1</h1>
+							<!-- <h1>사진을 마음껏 공유하세요</h1> -->
 							
 						</div>
 					</div>
@@ -54,7 +54,7 @@
 					<img src="../../images/main/background_01.jpg" style="width:100%;height:560px" data-src="" alt="Second slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Slide 2</h1>
+							<!-- <h1>사진을 모아 자신만의 앨범을 만드세요</h1> -->
 							
 						</div>
 					</div>
@@ -66,7 +66,7 @@
 					<img src="../../images/main/background_02.jpg" style="width:100%;height:560px" data-src="" alt="Third slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Slide 3</h1>
+							<!-- <h1>다른 사람의 사진들을 구경하고 두고두고 보세요</h1> -->
 							
 						</div>
 					</div>
@@ -77,7 +77,7 @@
 					<img src="../../images/main/main_4.jpg" style="width:100%;height:560px" data-src="" alt="Third slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Slide 3</h1>
+						<!-- 	<h1>Slide 3</h1> -->
 							
 						</div>
 					</div>
@@ -88,7 +88,7 @@
 					<img src="../../images/main/background_03.jpg" style="width:100%;height:560px" data-src="" alt="Third slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Slide 3</h1>
+							<!-- <h1>Slide 3</h1> -->
 							
 						</div>
 					</div>

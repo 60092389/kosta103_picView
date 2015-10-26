@@ -52,8 +52,12 @@ jsp -> colletion -> recent_Pic.jsp 수정
 picView.picture.controller ->picturecotroller 수정
 jsp->layout->header.jsp 수정
 
-2015/10/25 10:17 최연식
+2015/10/26 10:17 최연식
 picView.cat.controller ->catecontroller 수정
 picView.cat.action -> listcategoryaction3 수정
 jsp/account/accountset.html 추가
 jsp/account/accountset.jsp 수정
+
+
+2015/10/26 10:44 박준병
+jsp/index/index.jsp 수정(슬라이드글씨삭제)
