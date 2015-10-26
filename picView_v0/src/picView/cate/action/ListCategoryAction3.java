@@ -19,11 +19,22 @@ public class ListCategoryAction3 implements Action {
 			HttpServletResponse response) throws Exception {
 		CategoryDao dao = CategoryDao.getInstatnce();
 		List<Category> cate_list = dao.ListCategory2();
+		int result = 0;
+		if(request.getParameter("result") != null){
+			result = Integer.parseInt(request.getParameter("result"));
+		}
+		
 		
 		request.setAttribute("cate_list", cate_list);
 		ActionForward forward = new ActionForward();
+		
+		if(result == 1){
+			forward.setPath("../account/accountSet.jsp");
+			forward.setReDirect(false);
+		}else{
 		forward.setPath("../category/category.jsp");
 		forward.setReDirect(false);
+		}
 		return forward;
 	}
 

@@ -56,7 +56,7 @@ public class CateController extends HttpServlet {
     		}catch(Exception e){
     			e.printStackTrace();
     		}
-    	}else if(command.equals("jsp/category/categoryAction.done")){
+    	}else if(command.equals("jsp/category/categoryAction.done") || command.equals("jsp/account/categoryAction.done")){
     		action = new ListCategoryAction3();
     		try {
 				forward = action.execute(request, response);
